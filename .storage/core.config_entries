@@ -1,0 +1,416 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "core.config_entries",
+  "data": {
+    "entries": [
+      {
+        "entry_id": "efd0dcf0551da70093b7b07d0b984d4d",
+        "version": 1,
+        "domain": "hassio",
+        "title": "Supervisor",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "system",
+        "unique_id": "hassio",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "04c211618b85bd77157a3669e36d4ee6",
+        "version": 1,
+        "domain": "sun",
+        "title": "Sun",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "import",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "dd3878a7c840ba8415055ea3d9bb2faf",
+        "version": 1,
+        "domain": "bluetooth",
+        "title": "40:EC:99:AA:40:FA",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "integration_discovery",
+        "unique_id": "40:EC:99:AA:40:FA",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "5f9ee933312837c0450c4a3601ce9384",
+        "version": 1,
+        "domain": "shopping_list",
+        "title": "Shopping list",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": "shopping_list",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "bd940fd56ff90c4107c26884faa8c0f0",
+        "version": 1,
+        "domain": "google_translate",
+        "title": "Google Translate text-to-speech",
+        "data": {
+          "language": "en",
+          "tld": "com"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "a93b8812f0ac265ff27eba3b4c2a3306",
+        "version": 1,
+        "domain": "radio_browser",
+        "title": "Radio Browser",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "476bc1dba5811e884acf66705390837b",
+        "version": 1,
+        "domain": "met",
+        "title": "Home",
+        "data": {
+          "track_home": true
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "74ca3664175b3a1cc8d5dc7dd4f05923",
+        "version": 1,
+        "domain": "xiaomi_ble",
+        "title": "Temperature/Humidity Sensor 0703 (LYWSD03MMC)",
+        "data": {
+          "bindkey": "e874243622fb7298b060a23f4f6e067c"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "bluetooth",
+        "unique_id": "A4:C1:38:21:07:03",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "470f1aedd29356aae2c6f6f89012fd8e",
+        "version": 1,
+        "domain": "mobile_app",
+        "title": "M2102J20SG",
+        "data": {
+          "app_id": "io.homeassistant.companion.android",
+          "app_name": "Home Assistant",
+          "app_version": "2023.10.2-full (11484)",
+          "device_name": "M2102J20SG",
+          "manufacturer": "Xiaomi",
+          "model": "M2102J20SG",
+          "os_name": "Android",
+          "os_version": "31",
+          "supports_encryption": false,
+          "app_data": {
+            "push_websocket_channel": true,
+            "push_url": "https://mobile-apps.home-assistant.io/api/sendPush/android/v1",
+            "push_token": "c9nbFIExSIebnqZ72rbNgQ:APA91bEDlDejBrsXomtcZ1wehw2ecmhzrefo_m5cK5Dy4DqF0FjP3ivqje0CWEk0b_uW3YuZugKiOJ5KTbnFrUpPNKwwlLeI3GDcN_skKTZC8n297nAQEovJqV6aqz-58YKqiLjt8FqG"
+          },
+          "device_id": "20b0945e1433f062",
+          "webhook_id": "c6dcc86f7b87e9a45043dc5d78695cbc7ff7a012c7266e803f3b1f340afe5f7a",
+          "user_id": "4dcf38da28f445c29c7a4a77c50b7f4f"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "registration",
+        "unique_id": "io.homeassistant.companion.android-20b0945e1433f062",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "0567610991b9b2bbce83965446db564d",
+        "version": 1,
+        "domain": "mqtt",
+        "title": "Mosquitto broker",
+        "data": {
+          "broker": "core-mosquitto",
+          "port": 1883,
+          "username": "homeassistant",
+          "password": "OofoeDor4ohdohjochooqueew9hoh4uoS5iemiemiezeeCh7eepoosiBeo5feis4",
+          "discovery": true
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "hassio",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "6ec5d6d365e7aee648265b0613ff8df0",
+        "version": 1,
+        "domain": "ibeacon",
+        "title": "iBeacon Tracker",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "bluetooth",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "d7bf0291350b2a682a61cbb0e2a78f42",
+        "version": 1,
+        "domain": "xiaomi_ble",
+        "title": "Temperature/Humidity Sensor F954 (LYWSD03MMC)",
+        "data": {
+          "bindkey": "ef1097692c9fd07222b76b0dbba174d0"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "bluetooth",
+        "unique_id": "A4:C1:38:82:F9:54",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "70378e3dfdc3cc914c36550055db05de",
+        "version": 1,
+        "domain": "xiaomi_miio",
+        "title": "Xiaomi Smart Home Hub 2",
+        "data": {
+          "config_flow_device": "gateway",
+          "host": "192.168.1.74",
+          "token": "7366496d37744358436b46786c7a6e45",
+          "model": "lumi.gateway.mgl001",
+          "mac": "54:ef:44:4d:1c:18",
+          "cloud_username": "+79521183829",
+          "cloud_password": "1590753Aa",
+          "cloud_country": "ru"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "54:ef:44:4d:1c:18",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "a0c80694f99a12eb0d79fed9cf68d2c0",
+        "version": 1,
+        "domain": "xiaomi_miot",
+        "title": "Xiaomi: 4186994645",
+        "data": {
+          "username": "+79521183829",
+          "password": "1590753Aa",
+          "server_country": "ru",
+          "user_id": "4186994645",
+          "service_token": "vLatQQl6s/P6SfjWkwemzAkcPIURkL3ijYkGByMH0yorqYuM+xYjj0G8Acq8bqiAEGF4gioeI3m6CN9BowkoxzpXdqCs1M8j4YbF+gSfvQSjapcP//AcbrZ/A4z6ZAt0aDRK+6MbaqcL+D3RjazOACuDdvXJZ+30c0JEUQWyhIM=",
+          "ssecurity": "S1PJ2IXxxz+h5JXLV5WrSg==",
+          "sid": "xiaomiio",
+          "device_id": "58XPTOPBPVR51UD1",
+          "conn_mode": "auto",
+          "filter_did": "exclude",
+          "did_list": [
+            "551078423",
+            "556648974",
+            "blt.6.1g1vaf6fcsk00",
+            "blt.6.1g2cpjlhksg00",
+            "535868969",
+            "miwifi.a001920b-b3f1-084c-9a86-b8461ae78025",
+            "357462189"
+          ],
+          "config_version": 0.3,
+          "disable_message": false
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "7fc06d59e5722aac6932e37df0a3d42e",
+        "version": 1,
+        "domain": "xiaomi_miot",
+        "title": "Xiaomi: Customizes",
+        "data": {
+          "customizing_device": {}
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": "xiaomi_miot-customizes",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "f34ab84dea904e59b76c15b122bdc870",
+        "version": 1,
+        "domain": "github",
+        "title": "",
+        "data": {
+          "access_token": "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"
+        },
+        "options": {
+          "repositories": [
+            "relizerel161/homeAssistant"
+          ]
+        },
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "1a142ab41b2df9f3c44da94dffc7e548",
+        "version": 1,
+        "domain": "google_translate",
+        "title": "Google Translate text-to-speech",
+        "data": {
+          "language": "en",
+          "tld": "com"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "11addfdf3d524c6a8c76ba2db36dc67e",
+        "version": 1,
+        "domain": "met",
+        "title": "Home",
+        "data": {
+          "track_home": true
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "38fb6512010130ea12684d564113ab5f",
+        "version": 1,
+        "domain": "radio_browser",
+        "title": "Radio Browser",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "da504fcc0fd87b38735310cfbc3c70b9",
+        "version": 1,
+        "domain": "google_translate",
+        "title": "Google Translate text-to-speech",
+        "data": {
+          "language": "en",
+          "tld": "com"
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "8e3e5409a827eb88c30b58c6ce175170",
+        "version": 1,
+        "domain": "met",
+        "title": "Home",
+        "data": {
+          "track_home": true
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "c6a272d73205f21003fb98f7ff46b823",
+        "version": 1,
+        "domain": "radio_browser",
+        "title": "Radio Browser",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "onboarding",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "f1379348b7eebcab9972de41ba73829e",
+        "version": 1,
+        "domain": "xiaomi_ble",
+        "title": "Temperature/Humidity Sensor 145E (LYWSD03MMC)",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "bluetooth",
+        "unique_id": "A4:C1:38:A0:14:5E",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "39b43472049ada206f7ef5a752f601e4",
+        "version": 1,
+        "domain": "xiaomi_ble",
+        "title": "Temperature/Humidity Sensor 73BE (LYWSD03MMC)",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "bluetooth",
+        "unique_id": "A4:C1:38:D9:73:BE",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "339b50c402a28d447bf93d61d22b8f0b",
+        "version": 1,
+        "domain": "xiaomi_ble",
+        "title": "Temperature/Humidity Sensor 753C (LYWSD03MMC)",
+        "data": {},
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "bluetooth",
+        "unique_id": "A4:C1:38:5A:75:3C",
+        "disabled_by": null
+      }
+    ]
+  }
+}

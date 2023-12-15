@@ -1,0 +1,729 @@
+2023-12-15 19:21:46.707 ERROR (MainThread) [homeassistant.setup] Setup failed for 'xiaomi_miot': Integration not found.
+2023-12-15 19:21:47.386 WARNING (SyncWorker_7) [miio.device] Found an unsupported model 'lumi.gateway.mgl001' for class 'Gateway'. If this is working for you, please open an issue at https://github.com/rytilahti/python-miio/
+2023-12-15 19:21:48.613 ERROR (MainThread) [homeassistant.components.weather] Platform met does not generate unique IDs. ID home already exists - ignoring weather.forecast_home_assistant
+2023-12-15 19:21:58.516 WARNING (MainThread) [homeassistant.components.alarm_control_panel] Setup of alarm_control_panel platform xiaomi_miio is taking over 10 seconds.
+2023-12-15 19:21:58.516 WARNING (MainThread) [homeassistant.components.light] Setup of light platform xiaomi_miio is taking over 10 seconds.
+2023-12-15 19:22:04.675 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:22:04.695 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:22:04.696 ERROR (MainThread) [homeassistant.components.light] xiaomi_miio: Error on device update!
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/miio/miioprotocol.py", line 214, in send
+    self._handle_error(payload["error"])
+  File "/usr/local/lib/python3.11/site-packages/miio/miioprotocol.py", line 274, in _handle_error
+    raise RecoverableError(error)
+miio.exceptions.RecoverableError: {'code': -9999, 'message': 'user ack timeout'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/miio/miioprotocol.py", line 214, in send
+    self._handle_error(payload["error"])
+  File "/usr/local/lib/python3.11/site-packages/miio/miioprotocol.py", line 274, in _handle_error
+    raise RecoverableError(error)
+miio.exceptions.RecoverableError: {'code': -9999, 'message': 'user ack timeout'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/miio/miioprotocol.py", line 214, in send
+    self._handle_error(payload["error"])
+  File "/usr/local/lib/python3.11/site-packages/miio/miioprotocol.py", line 274, in _handle_error
+    raise RecoverableError(error)
+miio.exceptions.RecoverableError: {'code': -9999, 'message': 'user ack timeout'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/site-packages/miio/miioprotocol.py", line 214, in send
+    self._handle_error(payload["error"])
+  File "/usr/local/lib/python3.11/site-packages/miio/miioprotocol.py", line 274, in _handle_error
+    raise RecoverableError(error)
+miio.exceptions.RecoverableError: {'code': -9999, 'message': 'user ack timeout'}
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/usr/src/homeassistant/homeassistant/helpers/entity_platform.py", line 575, in _async_add_entity
+    await entity.async_device_update(warning=False)
+  File "/usr/src/homeassistant/homeassistant/helpers/entity.py", line 959, in async_device_update
+    await self.async_update()
+  File "/usr/src/homeassistant/homeassistant/components/xiaomi_miio/light.py", line 1029, in async_update
+    state_dict = await self.hass.async_add_executor_job(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/miio/gateway/light.py", line 39, in rgb_status
+    state_int = self._gateway.send("get_rgb").pop()
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/miio/device.py", line 107, in send
+    return self._protocol.send(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/miio/miioprotocol.py", line 248, in send
+    return self.send(
+           ^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/miio/miioprotocol.py", line 248, in send
+    return self.send(
+           ^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/miio/miioprotocol.py", line 248, in send
+    return self.send(
+           ^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/miio/miioprotocol.py", line 256, in send
+    raise DeviceException("Unable to recover failed command") from ex
+miio.exceptions.DeviceException: Unable to recover failed command
+2023-12-15 19:22:28.517 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:22:34.663 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:22:44.678 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:22:50.867 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:22:58.517 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:23:04.849 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:23:14.680 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:23:20.943 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:23:28.518 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:23:34.762 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:23:44.680 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:23:50.901 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:23:58.521 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:24:04.702 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:24:14.681 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:24:20.843 ERROR (SyncWorker_12) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:24:28.520 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:24:58.520 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:25:04.788 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:25:14.682 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:25:20.967 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:25:28.521 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:25:34.686 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:25:44.683 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:25:50.941 ERROR (SyncWorker_12) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:25:58.522 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:26:04.788 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:26:14.685 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:26:20.947 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:26:28.524 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:26:34.807 ERROR (SyncWorker_13) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:26:44.685 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:26:50.888 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:26:58.525 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:27:04.694 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:27:14.686 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:27:20.948 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:27:28.526 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:27:34.710 ERROR (SyncWorker_12) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:27:44.687 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:27:50.830 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:27:58.527 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:28:04.735 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:28:14.688 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:28:20.969 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:28:28.529 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:28:34.691 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:28:44.690 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:28:50.873 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:28:58.529 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:29:04.617 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:29:14.691 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:29:20.894 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:29:28.530 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:29:34.780 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:29:44.691 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:29:50.991 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:29:58.531 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:30:04.723 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:30:14.692 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:30:20.904 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:30:28.532 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:30:35.646 ERROR (SyncWorker_12) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:30:44.691 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:30:51.176 ERROR (SyncWorker_13) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:30:58.531 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:31:05.030 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:31:14.692 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:31:20.904 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:31:28.532 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:31:34.792 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:31:44.692 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:31:50.910 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:31:58.532 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:32:04.775 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:32:14.693 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:32:20.786 ERROR (SyncWorker_13) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:32:28.533 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:32:34.768 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:32:44.694 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:32:51.027 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:32:58.533 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:33:04.772 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:33:14.694 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:33:20.930 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:33:28.533 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:33:34.768 ERROR (SyncWorker_12) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:33:44.696 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:33:50.834 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:33:58.535 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:34:04.827 ERROR (SyncWorker_13) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:34:14.695 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:34:20.970 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:34:28.537 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:34:35.695 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: timed out
+2023-12-15 19:34:44.696 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:34:50.950 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:34:58.537 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:35:04.717 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:35:14.696 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:35:20.958 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:35:28.538 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:35:34.748 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:35:44.698 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:35:50.862 ERROR (SyncWorker_13) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:35:58.539 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:36:04.818 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:36:14.699 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:36:21.860 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:36:28.540 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:36:34.694 ERROR (SyncWorker_12) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:36:44.698 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:36:51.078 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:36:58.540 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:37:04.699 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:37:14.702 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:37:20.816 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:37:28.540 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:37:34.837 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:37:44.700 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:37:50.991 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:37:58.544 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:38:04.710 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:38:14.702 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:38:21.090 ERROR (SyncWorker_10) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:38:28.543 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:38:40.623 ERROR (SyncWorker_12) [miio.miioprotocol] Got error when receiving: timed out
+2023-12-15 19:38:44.703 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:38:50.904 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:38:58.545 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:39:04.746 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:39:14.703 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:39:20.976 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:39:28.547 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:39:34.684 ERROR (SyncWorker_13) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:39:44.705 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:39:50.985 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:39:58.548 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:40:04.704 ERROR (SyncWorker_10) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:40:14.707 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:40:20.981 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:40:28.547 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:40:34.712 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:40:44.707 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:40:51.060 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:40:58.548 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:41:04.713 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:41:14.708 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:41:20.957 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:41:28.548 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:41:34.752 ERROR (SyncWorker_12) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:41:44.709 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:41:51.162 ERROR (SyncWorker_2) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:41:58.548 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:42:04.715 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:42:14.709 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:42:20.806 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:42:28.549 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:42:34.729 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:42:44.710 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:42:50.859 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:42:58.550 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:43:04.764 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:43:14.710 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:43:20.987 ERROR (SyncWorker_2) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:43:28.550 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:43:34.724 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:43:44.711 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:43:50.968 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:43:58.551 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:44:04.662 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:44:14.713 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:44:21.002 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:44:28.553 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:44:34.722 ERROR (SyncWorker_12) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:44:44.714 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:44:50.974 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:44:58.554 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:45:04.696 ERROR (SyncWorker_2) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:45:14.714 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:45:20.976 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:45:28.556 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:45:34.826 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:45:44.715 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:45:50.980 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:45:58.556 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:46:04.742 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:46:14.717 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:46:20.842 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:46:28.557 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:46:34.822 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:46:44.719 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:46:51.041 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:46:58.558 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:47:04.842 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:47:14.720 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:47:20.801 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:47:28.560 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:47:34.840 ERROR (SyncWorker_12) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:47:44.719 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:47:50.939 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:47:58.560 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:48:04.758 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:48:14.720 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:48:21.019 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:48:28.561 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:48:34.959 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:48:44.720 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:48:51.103 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:48:58.561 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:49:04.797 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:49:14.721 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:49:20.821 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:49:28.563 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:49:34.778 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:49:44.722 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:49:50.956 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:49:58.563 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:50:04.727 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:50:14.721 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:50:20.876 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:50:28.562 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:50:34.856 ERROR (SyncWorker_12) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:50:44.721 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:50:51.012 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:50:58.564 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:51:04.777 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:51:14.723 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:51:21.037 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:51:28.565 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:51:34.796 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:51:44.724 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:51:50.897 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:51:58.565 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:52:04.856 ERROR (SyncWorker_12) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:52:14.724 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:52:20.856 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:52:28.565 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:52:34.796 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:52:44.726 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:52:50.958 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:52:58.566 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:53:04.727 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:53:14.725 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:53:20.876 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:53:28.567 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:53:34.797 ERROR (SyncWorker_12) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:53:44.728 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:53:50.956 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:53:58.568 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:54:04.736 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:54:14.728 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:54:20.796 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:54:28.568 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:54:34.733 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:54:44.731 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:54:50.877 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:54:58.570 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:55:04.639 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:55:14.730 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:55:20.944 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:55:28.571 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:55:34.735 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:55:44.731 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:55:51.050 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:55:58.572 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:56:04.818 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:56:14.732 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:56:20.954 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:56:28.573 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:56:34.789 ERROR (SyncWorker_12) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:56:44.733 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:56:51.028 ERROR (SyncWorker_10) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:56:58.574 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:57:04.730 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:57:14.733 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:57:20.959 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:57:28.575 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:57:34.799 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:57:44.734 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:57:50.964 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:57:58.575 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:58:04.823 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:58:14.736 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:58:21.071 ERROR (SyncWorker_10) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:58:28.576 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:58:34.821 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:58:44.735 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:58:51.073 ERROR (SyncWorker_9) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:58:58.577 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:59:04.839 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:59:14.737 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:59:20.973 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:59:28.578 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 19:59:34.939 ERROR (SyncWorker_12) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:59:44.736 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 19:59:50.976 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 19:59:58.578 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:00:04.781 ERROR (SyncWorker_10) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:00:14.737 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:00:20.924 ERROR (SyncWorker_9) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:00:28.579 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:00:34.820 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:00:44.738 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:00:50.986 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:00:58.580 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:01:04.762 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:01:14.740 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:01:20.841 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:01:28.582 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:01:34.818 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:01:44.741 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:01:50.992 ERROR (SyncWorker_10) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:01:58.582 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:02:04.716 ERROR (SyncWorker_9) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:02:14.741 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:02:20.921 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:02:28.583 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:02:34.681 ERROR (SyncWorker_12) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:02:44.743 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:02:50.905 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:02:58.584 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:03:04.723 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:03:14.745 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:03:20.902 ERROR (SyncWorker_10) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:03:28.585 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:03:34.742 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:03:44.744 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:03:50.826 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:03:58.586 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:04:04.762 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:04:14.745 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:04:20.911 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:04:28.587 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:04:34.823 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:04:44.746 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:04:51.324 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:04:58.587 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:05:04.736 ERROR (SyncWorker_10) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:05:14.749 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:05:20.919 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:05:28.588 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:05:34.861 ERROR (SyncWorker_2) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:05:44.751 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:05:50.940 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:05:58.590 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:06:04.820 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:06:14.751 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:06:20.940 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:06:28.592 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:06:34.879 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:06:44.752 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:06:51.028 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:06:58.592 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:07:04.779 ERROR (SyncWorker_2) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:07:14.754 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:07:21.954 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:07:28.594 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:07:34.898 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:07:44.753 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:07:51.037 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:07:58.594 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:08:04.978 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:08:14.753 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:08:20.934 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:08:28.595 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:08:34.780 ERROR (SyncWorker_2) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:08:44.754 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:08:51.042 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:08:58.595 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:09:04.779 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:09:14.755 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:09:21.043 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:09:28.597 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:09:34.798 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:09:44.756 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:09:51.047 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:09:58.598 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:10:04.761 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:10:14.756 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:10:20.977 ERROR (SyncWorker_2) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:10:28.598 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:10:34.797 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:10:44.757 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:10:50.977 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:10:58.599 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:11:04.760 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:11:14.757 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:11:22.698 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:11:28.600 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:11:34.780 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:11:44.759 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:11:51.079 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:11:58.600 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:12:04.797 ERROR (SyncWorker_2) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:12:14.761 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:12:21.067 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:12:28.601 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:12:34.804 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:12:44.760 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:12:50.966 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:12:58.603 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:13:04.767 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:13:14.762 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:13:21.074 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:13:28.603 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:13:34.716 ERROR (SyncWorker_2) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:13:44.761 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:13:51.078 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:13:58.604 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:14:04.767 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:14:14.763 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:14:20.896 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:14:28.605 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:14:34.917 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:14:44.764 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:14:51.082 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:14:58.605 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:15:04.818 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:15:14.764 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:15:20.986 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:15:28.606 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:15:34.800 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:15:44.765 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:15:50.917 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:15:58.607 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:16:04.837 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:16:14.766 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:16:21.008 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:16:28.607 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:16:34.771 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:16:44.767 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:16:51.017 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:16:58.609 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:17:04.857 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:17:14.768 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:17:20.896 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:17:28.610 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:17:34.773 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:17:44.769 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:17:51.007 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:17:58.610 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:18:04.857 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:18:14.770 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:18:21.007 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:18:28.610 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:18:34.877 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:18:44.770 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:18:51.037 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:18:58.612 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:19:04.812 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:19:14.772 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:19:21.014 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:19:28.612 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:19:34.777 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:19:44.772 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:19:51.018 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:19:58.613 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:20:04.778 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:20:14.773 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:20:23.654 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: timed out
+2023-12-15 20:20:28.614 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:20:36.075 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:20:44.773 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:20:50.938 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:20:58.615 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:21:04.998 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:21:14.775 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:21:21.233 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:21:28.616 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:21:34.805 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:21:44.775 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:21:50.932 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:21:58.617 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:22:04.880 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:22:14.776 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:22:21.036 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:22:28.618 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:22:34.760 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:22:44.776 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:22:50.939 ERROR (SyncWorker_10) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:22:58.619 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:23:04.844 ERROR (SyncWorker_13) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:23:14.779 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:23:21.045 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:23:28.620 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:23:34.861 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:23:44.780 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:23:51.050 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:23:58.620 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:24:04.770 ERROR (SyncWorker_8) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:24:14.780 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:24:20.982 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:24:28.620 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:24:34.775 ERROR (SyncWorker_13) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:24:44.781 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:24:50.955 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:24:58.622 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:25:04.780 ERROR (SyncWorker_3) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:25:14.782 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:25:23.885 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: timed out
+2023-12-15 20:25:28.622 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:25:34.840 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:25:44.784 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:25:50.948 ERROR (SyncWorker_10) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:25:58.622 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:26:04.920 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:26:14.784 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:26:20.980 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:26:28.624 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:26:34.820 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:26:44.786 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:26:51.175 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:26:58.625 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:27:04.921 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:27:14.786 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:27:20.923 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:27:28.626 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:27:34.841 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:27:44.787 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:27:51.184 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:27:58.628 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:28:04.841 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:28:14.788 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:28:21.082 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:28:28.627 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:28:34.921 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:28:44.789 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:28:51.087 ERROR (SyncWorker_10) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:28:58.628 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:29:04.941 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:29:14.789 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:29:20.901 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:29:28.629 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:29:34.842 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:29:44.790 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:29:50.926 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:29:58.628 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:30:04.945 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:30:14.791 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:30:21.204 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:30:28.630 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:30:34.968 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:30:44.792 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:30:51.104 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:30:58.631 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:31:04.802 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:31:14.793 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:31:21.003 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:31:28.632 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:31:35.036 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:31:44.793 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:31:51.009 ERROR (SyncWorker_10) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:31:58.633 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:32:04.797 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:32:14.793 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:32:21.045 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:32:28.634 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:32:34.798 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:32:44.794 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:32:51.018 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:32:58.634 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:33:04.804 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:33:14.796 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:33:21.020 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:33:28.635 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:33:34.804 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:33:44.797 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:33:51.052 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:33:58.636 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:34:04.924 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:34:14.798 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:34:21.028 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:34:28.637 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:34:34.866 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:34:44.798 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:34:51.035 ERROR (SyncWorker_10) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:34:58.639 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:35:04.803 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:35:14.800 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:35:21.065 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:35:28.641 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:35:35.065 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:35:44.800 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:35:51.266 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:35:58.642 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:36:05.991 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:36:14.802 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:36:21.005 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:36:28.641 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:36:35.277 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:36:44.802 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:36:51.360 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:36:58.641 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:37:04.831 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:37:14.803 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:37:21.052 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:37:28.643 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:37:34.907 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:37:44.803 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:37:51.056 ERROR (SyncWorker_0) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:37:58.643 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:38:04.946 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:38:14.805 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:38:20.986 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:38:28.643 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:38:34.908 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:38:44.806 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:38:51.062 ERROR (SyncWorker_10) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:38:58.645 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:39:04.867 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:39:14.807 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:39:20.990 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:39:28.646 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:39:34.815 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:39:44.807 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:39:51.071 ERROR (SyncWorker_11) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:39:58.646 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:40:04.927 ERROR (SyncWorker_7) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:40:14.809 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:40:21.028 ERROR (SyncWorker_1) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:40:28.647 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:40:34.807 ERROR (SyncWorker_5) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:40:44.810 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:40:51.212 ERROR (SyncWorker_4) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:40:58.650 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:41:04.801 ERROR (SyncWorker_6) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:41:14.810 WARNING (MainThread) [homeassistant.helpers.entity] Update of alarm_control_panel.xiaomi_smart_home_hub_2_alarm is taking over 10 seconds
+2023-12-15 20:41:21.048 ERROR (SyncWorker_10) [miio.miioprotocol] Got error when receiving: {'code': -9999, 'message': 'user ack timeout'}
+2023-12-15 20:41:28.649 WARNING (MainThread) [homeassistant.helpers.entity] Update of sensor.xiaomi_smart_home_hub_2_illuminance is taking over 10 seconds
+2023-12-15 20:41:34.574 WARNING (Thread-2 (_thread_main)) [homeassistant.components.mqtt.client] Disconnected from MQTT server core-mosquitto:1883 (7)
+2023-12-15 20:41:34.758 WARNING (MainThread) [homeassistant.core] Task <Task pending name='track time interval 0:00:30' coro=<EntityPlatform._update_entity_states() running at /usr/src/homeassistant/homeassistant/helpers/entity_platform.py:877> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at /usr/local/lib/python3.11/asyncio/futures.py:387, <1 more>, Task.task_wakeup()]> cb=[set.remove()]> was still running after stage 2 shutdown; Integrations should cancel non-critical tasks when receiving the stop event to prevent delaying shutdown
+2023-12-15 20:41:34.841 WARNING (Thread-3 (_do_shutdown)) [homeassistant.util.executor] Thread[SyncWorker_1] is still running at shutdown: File "/usr/local/lib/python3.11/threading.py", line 1002, in _bootstrap
+    self._bootstrap_inner()
+  File "/usr/local/lib/python3.11/threading.py", line 1045, in _bootstrap_inner
+    self.run()
+  File "/usr/local/lib/python3.11/threading.py", line 982, in run
+    self._target(*self._args, **self._kwargs)
+  File "/usr/local/lib/python3.11/concurrent/futures/thread.py", line 83, in _worker
+    work_item.run()
+  File "/usr/local/lib/python3.11/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/usr/local/lib/python3.11/site-packages/miio/click_common.py", line 184, in _wrap
+    return func(self, *args, **kwargs)
+  File "/usr/local/lib/python3.11/site-packages/miio/gateway/gateway.py", line 408, in get_illumination
+    return self.send("get_illumination").pop()
+  File "/usr/local/lib/python3.11/site-packages/miio/device.py", line 107, in send
+    return self._protocol.send(
+  File "/usr/local/lib/python3.11/site-packages/miio/miioprotocol.py", line 248, in send
+    return self.send(
+  File "/usr/local/lib/python3.11/site-packages/miio/miioprotocol.py", line 248, in send
+    return self.send(
+  File "/usr/local/lib/python3.11/site-packages/miio/miioprotocol.py", line 248, in send
+    return self.send(
+  File "/usr/local/lib/python3.11/site-packages/miio/miioprotocol.py", line 193, in send
+    data, addr = s.recvfrom(4096)

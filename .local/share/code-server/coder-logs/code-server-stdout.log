@@ -1,0 +1,25 @@
+[2023-12-15T18:03:25.095Z] info  code-server 4.19.1 0c98611e6b43803a9d5dba222d7023b569abfb49
+[2023-12-15T18:03:25.096Z] info  Using user-data-dir /data/data
+[2023-12-15T18:03:25.105Z] info  Using config file /config/.config/code-server/config.yaml
+[2023-12-15T18:03:25.105Z] info  HTTP server listening on http://0.0.0.0:8443/
+[2023-12-15T18:03:25.105Z] info    - Authentication is disabled
+[2023-12-15T18:03:25.105Z] info    - Not serving HTTPS
+[2023-12-15T18:03:25.105Z] info  Session server listening on /data/data/code-server-ipc.sock
+[21:03:28] 
+
+
+
+
+[21:03:28] Extension host agent started.
+[21:03:28] Started initializing default profile extensions in extensions installation folder. file:///data/extensions
+[21:03:28] Completed initializing default profile extensions in extensions installation folder. file:///data/extensions
+[21:03:31] [192.168.1.67][917e6cb4][ManagementConnection] New connection established.
+[21:03:32] [192.168.1.67][b791ba0c][ExtensionHostConnection] New connection established.
+[21:03:32] [192.168.1.67][b791ba0c][ExtensionHostConnection] <485> Launched Extension Host Process.
+[21:12:43] Getting Manifest... keesschollaart.vscode-home-assistant
+[21:12:44] Installing extension: keesschollaart.vscode-home-assistant
+[21:12:48] Extension signature verification is not done: keesschollaart.vscode-home-assistant
+[21:12:48] Extracted extension to file:///data/extensions/keesschollaart.vscode-home-assistant-1.39.0-universal: keesschollaart.vscode-home-assistant
+[21:12:48] Renamed to /data/extensions/keesschollaart.vscode-home-assistant-1.39.0-universal
+[21:12:48] Extracting extension completed. keesschollaart.vscode-home-assistant
+[21:12:48] Extension installed successfully: keesschollaart.vscode-home-assistant

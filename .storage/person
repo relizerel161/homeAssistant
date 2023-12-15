@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "minor_version": 1,
+  "key": "person",
+  "data": {
+    "items": [
+      {
+        "id": "relizerel161",
+        "name": "relizerel161",
+        "user_id": "4c2ff019c93641eabb6805fd5f8dc3be",
+        "device_trackers": []
+      }
+    ]
+  }
+}

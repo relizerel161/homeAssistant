@@ -1,0 +1,655 @@
+{
+  "version": 1,
+  "minor_version": 4,
+  "key": "core.device_registry",
+  "data": {
+    "devices": [
+      {
+        "area_id": null,
+        "config_entries": [
+          "efd0dcf0551da70093b7b07d0b984d4d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "94a422dbb4b9e194545f8c1514166450",
+        "identifiers": [
+          [
+            "hassio",
+            "core"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Core",
+        "name_by_user": null,
+        "name": "Home Assistant Core",
+        "serial_number": null,
+        "sw_version": "2023.12.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "efd0dcf0551da70093b7b07d0b984d4d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "8ef3f43aed78fb83bdbbb34736ee052a",
+        "identifiers": [
+          [
+            "hassio",
+            "supervisor"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Supervisor",
+        "name_by_user": null,
+        "name": "Home Assistant Supervisor",
+        "serial_number": null,
+        "sw_version": "2023.11.6",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "efd0dcf0551da70093b7b07d0b984d4d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "0a3b0cd22906c406db850285b79f8726",
+        "identifiers": [
+          [
+            "hassio",
+            "host"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Host",
+        "name_by_user": null,
+        "name": "Home Assistant Host",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "efd0dcf0551da70093b7b07d0b984d4d"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "8f7155f00739d0f07b0d804aa49d85fe",
+        "identifiers": [
+          [
+            "hassio",
+            "OS"
+          ]
+        ],
+        "manufacturer": "Home Assistant",
+        "model": "Home Assistant Operating System",
+        "name_by_user": null,
+        "name": "Home Assistant Operating System",
+        "serial_number": null,
+        "sw_version": "11.2",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "04c211618b85bd77157a3669e36d4ee6"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "74d2c2cc7188c4cd1c13e3a97ecb1b59",
+        "identifiers": [
+          [
+            "sun",
+            "04c211618b85bd77157a3669e36d4ee6"
+          ]
+        ],
+        "manufacturer": null,
+        "model": null,
+        "name_by_user": null,
+        "name": "Sun",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "dd3878a7c840ba8415055ea3d9bb2faf"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "bluetooth",
+            "40:EC:99:AA:40:FA"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "usb:v1D6Bp0246d0546",
+        "id": "e0b3aca154efec1242b72c7c91c1c437",
+        "identifiers": [],
+        "manufacturer": "Intel Corporate",
+        "model": "0026 (8087:0026)",
+        "name_by_user": null,
+        "name": "hci0 (40:EC:99:AA:40:FA)",
+        "serial_number": null,
+        "sw_version": "homeassistant",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "476bc1dba5811e884acf66705390837b"
+        ],
+        "configuration_url": "https://www.met.no/en",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "0c5dfdba9a67c03fac1ca7d4a7b2a1bb",
+        "identifiers": [
+          [
+            "met",
+            "476bc1dba5811e884acf66705390837b"
+          ]
+        ],
+        "manufacturer": "Met.no",
+        "model": "Forecast",
+        "name_by_user": null,
+        "name": "Forecast",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "boks1",
+        "config_entries": [
+          "74ca3664175b3a1cc8d5dc7dd4f05923"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "bluetooth",
+            "A4:C1:38:21:07:03"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "65ca136d053eeb841fe46c751e5ee0cc",
+        "identifiers": [
+          [
+            "bluetooth",
+            "A4:C1:38:21:07:03"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "LYWSD03MMC",
+        "name_by_user": "Бокс1",
+        "name": "Temperature/Humidity Sensor 0703",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "efd0dcf0551da70093b7b07d0b984d4d"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/db21ed7f_filebrowser",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "7ba49ce9246fdba7a4dc2d60fafc9c50",
+        "identifiers": [
+          [
+            "hassio",
+            "db21ed7f_filebrowser"
+          ]
+        ],
+        "manufacturer": "HA Add-ons by alexbelgium",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "Filebrowser",
+        "serial_number": null,
+        "sw_version": "2.23.0_7",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "efd0dcf0551da70093b7b07d0b984d4d"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/a0d7b954_home-panel",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "eb7ca4a70d7e6ae60e108e1d48ee99c6",
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_home-panel"
+          ]
+        ],
+        "manufacturer": "Home Assistant Community Add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "Home Panel",
+        "serial_number": null,
+        "sw_version": "2.7.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "efd0dcf0551da70093b7b07d0b984d4d"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/core_mosquitto",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "23e7f053bf6314a7ec233392410f6dd8",
+        "identifiers": [
+          [
+            "hassio",
+            "core_mosquitto"
+          ]
+        ],
+        "manufacturer": "Official add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "Mosquitto broker",
+        "serial_number": null,
+        "sw_version": "6.4.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "efd0dcf0551da70093b7b07d0b984d4d"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/45df7312_zigbee2mqtt",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "75db20d5b12121d62021df0633981b4c",
+        "identifiers": [
+          [
+            "hassio",
+            "45df7312_zigbee2mqtt"
+          ]
+        ],
+        "manufacturer": "Home Assistant Add-on: Zigbee2MQTT",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "Zigbee2MQTT",
+        "serial_number": null,
+        "sw_version": "1.34.0-1",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "efd0dcf0551da70093b7b07d0b984d4d"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/a0d7b954_ssh",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "a957db2d138fdc5a8bf4d69d17f29484",
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_ssh"
+          ]
+        ],
+        "manufacturer": "Home Assistant Community Add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "Advanced SSH & Web Terminal",
+        "serial_number": null,
+        "sw_version": "17.0.0",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "470f1aedd29356aae2c6f6f89012fd8e"
+        ],
+        "configuration_url": null,
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "817658d348e5c637d8a38ee618a2b818",
+        "identifiers": [
+          [
+            "mobile_app",
+            "20b0945e1433f062"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "M2102J20SG",
+        "name_by_user": null,
+        "name": "M2102J20SG",
+        "serial_number": null,
+        "sw_version": "31",
+        "via_device_id": null
+      },
+      {
+        "area_id": "boks2",
+        "config_entries": [
+          "d7bf0291350b2a682a61cbb0e2a78f42"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "bluetooth",
+            "A4:C1:38:82:F9:54"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "7b47870bb07d9f9a56bb76197b850260",
+        "identifiers": [
+          [
+            "bluetooth",
+            "A4:C1:38:82:F9:54"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "LYWSD03MMC",
+        "name_by_user": "Бокс2",
+        "name": "Temperature/Humidity Sensor F954",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "efd0dcf0551da70093b7b07d0b984d4d"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/core_ssh",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "f299aa80311a53b186aea4b4038e27cf",
+        "identifiers": [
+          [
+            "hassio",
+            "core_ssh"
+          ]
+        ],
+        "manufacturer": "Official add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "Terminal & SSH",
+        "serial_number": null,
+        "sw_version": "9.8.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": "gostinaia",
+        "config_entries": [
+          "70378e3dfdc3cc914c36550055db05de"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "mac",
+            "54:ef:44:4d:1c:18"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": "Linux",
+        "id": "e4cc68bc2e4919e75e2c83530c8cac47",
+        "identifiers": [
+          [
+            "xiaomi_miio",
+            "54:ef:44:4d:1c:18"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "lumi.gateway.mgl001",
+        "name_by_user": null,
+        "name": "Xiaomi Smart Home Hub 2",
+        "serial_number": null,
+        "sw_version": "1.0.5_0016",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "efd0dcf0551da70093b7b07d0b984d4d"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/core_git_pull",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "16e6874d2626479c1bb3cf572399f815",
+        "identifiers": [
+          [
+            "hassio",
+            "core_git_pull"
+          ]
+        ],
+        "manufacturer": "Official add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "Git pull",
+        "serial_number": null,
+        "sw_version": "7.13.1",
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "f34ab84dea904e59b76c15b122bdc870"
+        ],
+        "configuration_url": "https://github.com/relizerel161/homeAssistant",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "ed683b270028b3d84abe68b6da90ddc5",
+        "identifiers": [
+          [
+            "github",
+            "relizerel161/homeAssistant"
+          ]
+        ],
+        "manufacturer": "GitHub",
+        "model": null,
+        "name_by_user": null,
+        "name": "relizerel161/homeAssistant",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "11addfdf3d524c6a8c76ba2db36dc67e"
+        ],
+        "configuration_url": "https://www.met.no/en",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "60652e7903b0ef9392c1b9ff6ab22ca5",
+        "identifiers": [
+          [
+            "met",
+            "11addfdf3d524c6a8c76ba2db36dc67e"
+          ]
+        ],
+        "manufacturer": "Met.no",
+        "model": "Forecast",
+        "name_by_user": null,
+        "name": "Forecast",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "boks1",
+        "config_entries": [
+          "f1379348b7eebcab9972de41ba73829e"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "bluetooth",
+            "A4:C1:38:A0:14:5E"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "457192cf0cd963b2aa4bc8c9a9965cc9",
+        "identifiers": [
+          [
+            "bluetooth",
+            "A4:C1:38:A0:14:5E"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "LYWSD03MMC",
+        "name_by_user": null,
+        "name": "Temperature/Humidity Sensor 145E",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "boks2",
+        "config_entries": [
+          "39b43472049ada206f7ef5a752f601e4"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "bluetooth",
+            "A4:C1:38:D9:73:BE"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "940bb9c7694ff66d3039781842872d4b",
+        "identifiers": [
+          [
+            "bluetooth",
+            "A4:C1:38:D9:73:BE"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "LYWSD03MMC",
+        "name_by_user": null,
+        "name": "Temperature/Humidity Sensor 73BE",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": "gostinaia",
+        "config_entries": [
+          "339b50c402a28d447bf93d61d22b8f0b"
+        ],
+        "configuration_url": null,
+        "connections": [
+          [
+            "bluetooth",
+            "A4:C1:38:5A:75:3C"
+          ]
+        ],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "06ca80207f2065b2081324f856f4621f",
+        "identifiers": [
+          [
+            "bluetooth",
+            "A4:C1:38:5A:75:3C"
+          ]
+        ],
+        "manufacturer": "Xiaomi",
+        "model": "LYWSD03MMC",
+        "name_by_user": null,
+        "name": "Temperature/Humidity Sensor 753C",
+        "serial_number": null,
+        "sw_version": null,
+        "via_device_id": null
+      },
+      {
+        "area_id": null,
+        "config_entries": [
+          "efd0dcf0551da70093b7b07d0b984d4d"
+        ],
+        "configuration_url": "homeassistant://hassio/addon/a0d7b954_vscode",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": "service",
+        "hw_version": null,
+        "id": "1bf6b6bb210406f84f52e458884a33b1",
+        "identifiers": [
+          [
+            "hassio",
+            "a0d7b954_vscode"
+          ]
+        ],
+        "manufacturer": "Home Assistant Community Add-ons",
+        "model": "Home Assistant Add-on",
+        "name_by_user": null,
+        "name": "Studio Code Server",
+        "serial_number": null,
+        "sw_version": "5.14.2",
+        "via_device_id": null
+      }
+    ],
+    "deleted_devices": [
+      {
+        "config_entries": [
+          "efd0dcf0551da70093b7b07d0b984d4d"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "db21ed7f_code-server"
+          ]
+        ],
+        "id": "b7252616890eeeb84ef9bc0f4a4fe91c",
+        "orphaned_timestamp": null
+      }
+    ]
+  }
+}

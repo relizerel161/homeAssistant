@@ -1,0 +1,392 @@
+{
+  "version": 1,
+  "minor_version": 1,
+  "key": "bluetooth.passive_update_processor",
+  "data": {
+    "39b43472049ada206f7ef5a752f601e4": {
+      "binary_sensor": {
+        "devices": {
+          "": {
+            "name": "Temperature/Humidity Sensor 73BE",
+            "manufacturer": "Xiaomi",
+            "model": "LYWSD03MMC"
+          }
+        },
+        "entity_descriptions": {},
+        "entity_names": {},
+        "entity_data": {}
+      },
+      "sensor": {
+        "devices": {
+          "": {
+            "name": "Temperature/Humidity Sensor 73BE",
+            "manufacturer": "Xiaomi",
+            "model": "LYWSD03MMC"
+          }
+        },
+        "entity_descriptions": {
+          "temperature___": {
+            "key": "temperature_°C",
+            "device_class": "temperature",
+            "native_unit_of_measurement": "°C",
+            "state_class": "measurement"
+          },
+          "humidity___": {
+            "key": "humidity_%",
+            "device_class": "humidity",
+            "native_unit_of_measurement": "%",
+            "state_class": "measurement"
+          },
+          "signal_strength___": {
+            "key": "signal_strength_dBm",
+            "device_class": "signal_strength",
+            "entity_category": "diagnostic",
+            "entity_registry_enabled_default": false,
+            "native_unit_of_measurement": "dBm",
+            "state_class": "measurement"
+          },
+          "battery___": {
+            "key": "battery_%",
+            "device_class": "battery",
+            "entity_category": "diagnostic",
+            "native_unit_of_measurement": "%",
+            "state_class": "measurement"
+          },
+          "voltage___": {
+            "key": "voltage_V",
+            "device_class": "voltage",
+            "entity_category": "diagnostic",
+            "native_unit_of_measurement": "V",
+            "state_class": "measurement"
+          }
+        },
+        "entity_names": {
+          "temperature___": "Temperature",
+          "humidity___": "Humidity",
+          "signal_strength___": "Signal Strength",
+          "battery___": "Battery",
+          "voltage___": "Voltage"
+        },
+        "entity_data": {
+          "temperature___": 26.5,
+          "humidity___": 35.6,
+          "signal_strength___": -51,
+          "battery___": 100,
+          "voltage___": 3.1
+        }
+      }
+    },
+    "74ca3664175b3a1cc8d5dc7dd4f05923": {
+      "binary_sensor": {
+        "devices": {
+          "": {
+            "name": "Temperature/Humidity Sensor 0703",
+            "manufacturer": "Xiaomi",
+            "model": "LYWSD03MMC"
+          }
+        },
+        "entity_descriptions": {},
+        "entity_names": {},
+        "entity_data": {}
+      },
+      "sensor": {
+        "devices": {
+          "": {
+            "name": "Temperature/Humidity Sensor 0703",
+            "manufacturer": "Xiaomi",
+            "model": "LYWSD03MMC"
+          }
+        },
+        "entity_descriptions": {
+          "signal_strength___": {
+            "key": "signal_strength_dBm",
+            "device_class": "signal_strength",
+            "entity_category": "diagnostic",
+            "entity_registry_enabled_default": false,
+            "native_unit_of_measurement": "dBm",
+            "state_class": "measurement"
+          },
+          "temperature___": {
+            "key": "temperature_°C",
+            "device_class": "temperature",
+            "native_unit_of_measurement": "°C",
+            "state_class": "measurement"
+          },
+          "humidity___": {
+            "key": "humidity_%",
+            "device_class": "humidity",
+            "native_unit_of_measurement": "%",
+            "state_class": "measurement"
+          },
+          "battery___": {
+            "key": "battery_%",
+            "device_class": "battery",
+            "entity_category": "diagnostic",
+            "entity_registry_enabled_default": null,
+            "entity_registry_visible_default": null,
+            "force_update": null,
+            "has_entity_name": null,
+            "name": null,
+            "native_unit_of_measurement": "%",
+            "state_class": "measurement"
+          },
+          "voltage___": {
+            "key": "voltage_V",
+            "device_class": "voltage",
+            "entity_category": "diagnostic",
+            "entity_registry_enabled_default": null,
+            "entity_registry_visible_default": null,
+            "force_update": null,
+            "has_entity_name": null,
+            "name": null,
+            "native_unit_of_measurement": "V",
+            "state_class": "measurement"
+          }
+        },
+        "entity_names": {
+          "signal_strength___": "Signal Strength",
+          "temperature___": "Temperature",
+          "humidity___": "Humidity",
+          "battery___": "Battery",
+          "voltage___": "Voltage"
+        },
+        "entity_data": {
+          "signal_strength___": -77,
+          "temperature___": 17.6,
+          "humidity___": 64.7,
+          "battery___": 100,
+          "voltage___": 3.1
+        }
+      }
+    },
+    "d7bf0291350b2a682a61cbb0e2a78f42": {
+      "binary_sensor": {
+        "devices": {
+          "": {
+            "name": "Temperature/Humidity Sensor F954",
+            "manufacturer": "Xiaomi",
+            "model": "LYWSD03MMC"
+          }
+        },
+        "entity_descriptions": {},
+        "entity_names": {},
+        "entity_data": {}
+      },
+      "sensor": {
+        "devices": {
+          "": {
+            "name": "Temperature/Humidity Sensor F954",
+            "manufacturer": "Xiaomi",
+            "model": "LYWSD03MMC"
+          }
+        },
+        "entity_descriptions": {
+          "temperature___": {
+            "key": "temperature_°C",
+            "device_class": "temperature",
+            "native_unit_of_measurement": "°C",
+            "state_class": "measurement"
+          },
+          "signal_strength___": {
+            "key": "signal_strength_dBm",
+            "device_class": "signal_strength",
+            "entity_category": "diagnostic",
+            "entity_registry_enabled_default": false,
+            "native_unit_of_measurement": "dBm",
+            "state_class": "measurement"
+          },
+          "humidity___": {
+            "key": "humidity_%",
+            "device_class": "humidity",
+            "native_unit_of_measurement": "%",
+            "state_class": "measurement"
+          },
+          "battery___": {
+            "key": "battery_%",
+            "device_class": "battery",
+            "entity_category": "diagnostic",
+            "entity_registry_enabled_default": null,
+            "entity_registry_visible_default": null,
+            "force_update": null,
+            "has_entity_name": null,
+            "name": null,
+            "native_unit_of_measurement": "%",
+            "state_class": "measurement"
+          },
+          "voltage___": {
+            "key": "voltage_V",
+            "device_class": "voltage",
+            "entity_category": "diagnostic",
+            "entity_registry_enabled_default": null,
+            "entity_registry_visible_default": null,
+            "force_update": null,
+            "has_entity_name": null,
+            "name": null,
+            "native_unit_of_measurement": "V",
+            "state_class": "measurement"
+          }
+        },
+        "entity_names": {
+          "temperature___": "Temperature",
+          "signal_strength___": "Signal Strength",
+          "humidity___": "Humidity",
+          "battery___": "Battery",
+          "voltage___": "Voltage"
+        },
+        "entity_data": {
+          "temperature___": 17.3,
+          "signal_strength___": -83,
+          "humidity___": 72.7,
+          "battery___": 100,
+          "voltage___": 3.1
+        }
+      }
+    },
+    "f1379348b7eebcab9972de41ba73829e": {
+      "binary_sensor": {
+        "devices": {
+          "": {
+            "name": "Temperature/Humidity Sensor 145E",
+            "manufacturer": "Xiaomi",
+            "model": "LYWSD03MMC"
+          }
+        },
+        "entity_descriptions": {},
+        "entity_names": {},
+        "entity_data": {}
+      },
+      "sensor": {
+        "devices": {
+          "": {
+            "name": "Temperature/Humidity Sensor 145E",
+            "manufacturer": "Xiaomi",
+            "model": "LYWSD03MMC"
+          }
+        },
+        "entity_descriptions": {
+          "temperature___": {
+            "key": "temperature_°C",
+            "device_class": "temperature",
+            "native_unit_of_measurement": "°C",
+            "state_class": "measurement"
+          },
+          "humidity___": {
+            "key": "humidity_%",
+            "device_class": "humidity",
+            "native_unit_of_measurement": "%",
+            "state_class": "measurement"
+          },
+          "signal_strength___": {
+            "key": "signal_strength_dBm",
+            "device_class": "signal_strength",
+            "entity_category": "diagnostic",
+            "entity_registry_enabled_default": false,
+            "native_unit_of_measurement": "dBm",
+            "state_class": "measurement"
+          },
+          "battery___": {
+            "key": "battery_%",
+            "device_class": "battery",
+            "entity_category": "diagnostic",
+            "native_unit_of_measurement": "%",
+            "state_class": "measurement"
+          },
+          "voltage___": {
+            "key": "voltage_V",
+            "device_class": "voltage",
+            "entity_category": "diagnostic",
+            "native_unit_of_measurement": "V",
+            "state_class": "measurement"
+          }
+        },
+        "entity_names": {
+          "temperature___": "Temperature",
+          "humidity___": "Humidity",
+          "signal_strength___": "Signal Strength",
+          "battery___": "Battery",
+          "voltage___": "Voltage"
+        },
+        "entity_data": {
+          "temperature___": 26.6,
+          "humidity___": 40.4,
+          "signal_strength___": -45,
+          "battery___": 98,
+          "voltage___": 3.082
+        }
+      }
+    },
+    "339b50c402a28d447bf93d61d22b8f0b": {
+      "binary_sensor": {
+        "devices": {
+          "": {
+            "name": "Temperature/Humidity Sensor 753C",
+            "manufacturer": "Xiaomi",
+            "model": "LYWSD03MMC"
+          }
+        },
+        "entity_descriptions": {},
+        "entity_names": {},
+        "entity_data": {}
+      },
+      "sensor": {
+        "devices": {
+          "": {
+            "name": "Temperature/Humidity Sensor 753C",
+            "manufacturer": "Xiaomi",
+            "model": "LYWSD03MMC"
+          }
+        },
+        "entity_descriptions": {
+          "temperature___": {
+            "key": "temperature_°C",
+            "device_class": "temperature",
+            "native_unit_of_measurement": "°C",
+            "state_class": "measurement"
+          },
+          "humidity___": {
+            "key": "humidity_%",
+            "device_class": "humidity",
+            "native_unit_of_measurement": "%",
+            "state_class": "measurement"
+          },
+          "signal_strength___": {
+            "key": "signal_strength_dBm",
+            "device_class": "signal_strength",
+            "entity_category": "diagnostic",
+            "entity_registry_enabled_default": false,
+            "native_unit_of_measurement": "dBm",
+            "state_class": "measurement"
+          },
+          "battery___": {
+            "key": "battery_%",
+            "device_class": "battery",
+            "entity_category": "diagnostic",
+            "native_unit_of_measurement": "%",
+            "state_class": "measurement"
+          },
+          "voltage___": {
+            "key": "voltage_V",
+            "device_class": "voltage",
+            "entity_category": "diagnostic",
+            "native_unit_of_measurement": "V",
+            "state_class": "measurement"
+          }
+        },
+        "entity_names": {
+          "temperature___": "Temperature",
+          "humidity___": "Humidity",
+          "signal_strength___": "Signal Strength",
+          "battery___": "Battery",
+          "voltage___": "Voltage"
+        },
+        "entity_data": {
+          "temperature___": 26.6,
+          "humidity___": 37.2,
+          "signal_strength___": -52,
+          "battery___": 100,
+          "voltage___": 3.1
+        }
+      }
+    }
+  }
+}
