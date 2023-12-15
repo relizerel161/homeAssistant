@@ -447,56 +447,6 @@
       {
         "area_id": null,
         "config_entries": [
-          "efd0dcf0551da70093b7b07d0b984d4d"
-        ],
-        "configuration_url": "homeassistant://hassio/addon/core_git_pull",
-        "connections": [],
-        "disabled_by": null,
-        "entry_type": "service",
-        "hw_version": null,
-        "id": "16e6874d2626479c1bb3cf572399f815",
-        "identifiers": [
-          [
-            "hassio",
-            "core_git_pull"
-          ]
-        ],
-        "manufacturer": "Official add-ons",
-        "model": "Home Assistant Add-on",
-        "name_by_user": null,
-        "name": "Git pull",
-        "serial_number": null,
-        "sw_version": "7.13.1",
-        "via_device_id": null
-      },
-      {
-        "area_id": null,
-        "config_entries": [
-          "f34ab84dea904e59b76c15b122bdc870"
-        ],
-        "configuration_url": "https://github.com/relizerel161/homeAssistant",
-        "connections": [],
-        "disabled_by": null,
-        "entry_type": "service",
-        "hw_version": null,
-        "id": "ed683b270028b3d84abe68b6da90ddc5",
-        "identifiers": [
-          [
-            "github",
-            "relizerel161/homeAssistant"
-          ]
-        ],
-        "manufacturer": "GitHub",
-        "model": null,
-        "name_by_user": null,
-        "name": "relizerel161/homeAssistant",
-        "serial_number": null,
-        "sw_version": null,
-        "via_device_id": null
-      },
-      {
-        "area_id": null,
-        "config_entries": [
           "11addfdf3d524c6a8c76ba2db36dc67e"
         ],
         "configuration_url": "https://www.met.no/en",
@@ -633,6 +583,156 @@
         "serial_number": null,
         "sw_version": "5.14.2",
         "via_device_id": null
+      },
+      {
+        "area_id": "gostinaia",
+        "config_entries": [
+          "1fb3bc048c1a1f888805e867891400ca"
+        ],
+        "configuration_url": "https://home.miot-spec.com/s/xiaomi.router.ra67",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "6b987773c1a8a63c435643ac49526900",
+        "identifiers": [
+          [
+            "xiaomi_miot",
+            "9c:9d:7e:45:4c:ee-1fb3bc048c1a1f888805e867891400ca"
+          ]
+        ],
+        "manufacturer": "xiaomi",
+        "model": "xiaomi.router.ra67",
+        "name_by_user": null,
+        "name": "Xiaomi_C78F",
+        "serial_number": null,
+        "sw_version": "",
+        "via_device_id": null
+      },
+      {
+        "area_id": "gostinaia",
+        "config_entries": [
+          "1fb3bc048c1a1f888805e867891400ca"
+        ],
+        "configuration_url": "https://home.miot-spec.com/s/zhimi.airpurifier.v7",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "3446478f42e7f38151cc5e20e3bff2cf",
+        "identifiers": [
+          [
+            "xiaomi_miot",
+            "64:90:c1:f1:45:ba-1fb3bc048c1a1f888805e867891400ca"
+          ]
+        ],
+        "manufacturer": "zhimi",
+        "model": "zhimi.airpurifier.v7",
+        "name_by_user": null,
+        "name": "Очиститель воздуха",
+        "serial_number": null,
+        "sw_version": "1.4.3_19105",
+        "via_device_id": null
+      },
+      {
+        "area_id": "boks2",
+        "config_entries": [
+          "4eb9172dbf8daf5831366300b1026608"
+        ],
+        "configuration_url": "https://home.miot-spec.com/s/miaomiaoce.sensor_ht.t2",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "8851adeb739d9ee6893825acab5154e4",
+        "identifiers": [
+          [
+            "xiaomi_miot",
+            "a4:c1:38:82:f9:54-4eb9172dbf8daf5831366300b1026608"
+          ]
+        ],
+        "manufacturer": "miaomiaoce",
+        "model": "miaomiaoce.sensor_ht.t2",
+        "name_by_user": null,
+        "name": "Бокс2",
+        "serial_number": null,
+        "sw_version": "2.1.1_0159",
+        "via_device_id": null
+      },
+      {
+        "area_id": "boks1",
+        "config_entries": [
+          "4eb9172dbf8daf5831366300b1026608"
+        ],
+        "configuration_url": "https://home.miot-spec.com/s/miaomiaoce.sensor_ht.t2",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "4e32a91a7d7ffae64c0080acaee6c6eb",
+        "identifiers": [
+          [
+            "xiaomi_miot",
+            "a4:c1:38:21:07:03-4eb9172dbf8daf5831366300b1026608"
+          ]
+        ],
+        "manufacturer": "miaomiaoce",
+        "model": "miaomiaoce.sensor_ht.t2",
+        "name_by_user": null,
+        "name": "Бокс1",
+        "serial_number": null,
+        "sw_version": "2.1.1_0159",
+        "via_device_id": null
+      },
+      {
+        "area_id": "spalnia",
+        "config_entries": [
+          "4eb9172dbf8daf5831366300b1026608"
+        ],
+        "configuration_url": "https://home.miot-spec.com/s/roborock.vacuum.a27",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "bb45aca8801dabc057eff3c7a379417a",
+        "identifiers": [
+          [
+            "xiaomi_miot",
+            "b0:4a:39:4e:f7:29-4eb9172dbf8daf5831366300b1026608"
+          ]
+        ],
+        "manufacturer": "roborock",
+        "model": "roborock.vacuum.a27",
+        "name_by_user": null,
+        "name": "Roborock S7 MaxV",
+        "serial_number": null,
+        "sw_version": "4.3.5_5840",
+        "via_device_id": null
+      },
+      {
+        "area_id": "lodzhiia",
+        "config_entries": [
+          "4eb9172dbf8daf5831366300b1026608"
+        ],
+        "configuration_url": "https://home.miot-spec.com/s/viomi.heater.v9",
+        "connections": [],
+        "disabled_by": null,
+        "entry_type": null,
+        "hw_version": null,
+        "id": "aa4ba20432fe6080b8a71d2d6a83fdd3",
+        "identifiers": [
+          [
+            "xiaomi_miot",
+            "68:ab:bc:9e:27:20-4eb9172dbf8daf5831366300b1026608"
+          ]
+        ],
+        "manufacturer": "viomi",
+        "model": "viomi.heater.v9",
+        "name_by_user": null,
+        "name": "Viomi Smart Heater Pro2 (Bluetooth Version)",
+        "serial_number": null,
+        "sw_version": "2.2.1",
+        "via_device_id": null
       }
     ],
     "deleted_devices": [
@@ -648,6 +748,32 @@
           ]
         ],
         "id": "b7252616890eeeb84ef9bc0f4a4fe91c",
+        "orphaned_timestamp": null
+      },
+      {
+        "config_entries": [],
+        "connections": [],
+        "identifiers": [
+          [
+            "github",
+            "relizerel161/homeAssistant"
+          ]
+        ],
+        "id": "ed683b270028b3d84abe68b6da90ddc5",
+        "orphaned_timestamp": 1702666757.0001206
+      },
+      {
+        "config_entries": [
+          "efd0dcf0551da70093b7b07d0b984d4d"
+        ],
+        "connections": [],
+        "identifiers": [
+          [
+            "hassio",
+            "core_git_pull"
+          ]
+        ],
+        "id": "16e6874d2626479c1bb3cf572399f815",
         "orphaned_timestamp": null
       }
     ]

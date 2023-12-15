@@ -90,9 +90,7 @@ async def async_setup_platform(hass, config, async_add_entities, discovery_info=
             if 'miir.' in model:
                 entities.append(MiirMediaPlayerEntity(config, srv))
                 continue
-            if model in ['xiaomi.controller.86v1']:
-                pass
-            elif not srv.mapping() and not srv.get_action('play'):
+            if not srv.mapping() and not srv.get_action('play'):
                 continue
             if spec.get_service('television', 'projector', 'tv_box'):
                 entities.append(MitvMediaPlayerEntity(config, srv))

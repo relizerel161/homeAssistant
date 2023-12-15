@@ -5,6 +5,28 @@
   "data": [
     {
       "state": {
+        "entity_id": "person.relizerel161",
+        "state": "unknown",
+        "attributes": {
+          "editable": true,
+          "id": "relizerel161",
+          "user_id": "4c2ff019c93641eabb6805fd5f8dc3be",
+          "device_trackers": [],
+          "friendly_name": "relizerel161"
+        },
+        "last_changed": "2023-12-15T18:58:22.348592+00:00",
+        "last_updated": "2023-12-15T18:58:42.588455+00:00",
+        "context": {
+          "id": "01HHQDGQ8WTH89QBGS4G3K50ZF",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
+    },
+    {
+      "state": {
         "entity_id": "update.home_assistant_supervisor_update",
         "state": "off",
         "attributes": {
@@ -20,16 +42,16 @@
           "friendly_name": "Home Assistant Supervisor Update",
           "supported_features": 1
         },
-        "last_changed": "2023-12-15T17:47:22.536303+00:00",
-        "last_updated": "2023-12-15T17:47:22.536303+00:00",
+        "last_changed": "2023-12-15T18:58:23.972134+00:00",
+        "last_updated": "2023-12-15T18:58:23.972134+00:00",
         "context": {
-          "id": "01HHQ9E3H8RMRTWQQ92NR5PD56",
+          "id": "01HHQDG5345QHGN1AANA5P25PS",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
@@ -48,16 +70,16 @@
           "friendly_name": "Home Assistant Core Update",
           "supported_features": 11
         },
-        "last_changed": "2023-12-15T17:47:22.536458+00:00",
-        "last_updated": "2023-12-15T17:47:22.536458+00:00",
+        "last_changed": "2023-12-15T18:58:23.972589+00:00",
+        "last_updated": "2023-12-15T18:58:23.972589+00:00",
         "context": {
-          "id": "01HHQ9E3H853357A6C4W5ADE0M",
+          "id": "01HHQDG534Y16WRZMYNFPRJCZH",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
@@ -76,16 +98,16 @@
           "friendly_name": "Filebrowser Update",
           "supported_features": 25
         },
-        "last_changed": "2023-12-15T17:47:22.536586+00:00",
-        "last_updated": "2023-12-15T17:47:22.536586+00:00",
+        "last_changed": "2023-12-15T18:58:23.972734+00:00",
+        "last_updated": "2023-12-15T18:58:23.972734+00:00",
         "context": {
-          "id": "01HHQ9E3H8ZHYW8JNQN3AWE1RN",
+          "id": "01HHQDG5342DRW7ZD7R7NRJEHR",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
@@ -104,16 +126,16 @@
           "friendly_name": "Home Panel Update",
           "supported_features": 25
         },
-        "last_changed": "2023-12-15T17:47:22.536696+00:00",
-        "last_updated": "2023-12-15T17:47:22.536696+00:00",
+        "last_changed": "2023-12-15T18:58:23.972882+00:00",
+        "last_updated": "2023-12-15T18:58:23.972882+00:00",
         "context": {
-          "id": "01HHQ9E3H8X8B1HR1HGN1J14CQ",
+          "id": "01HHQDG534WXNC6J04MYGK78VN",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
@@ -132,16 +154,16 @@
           "friendly_name": "Mosquitto broker Update",
           "supported_features": 25
         },
-        "last_changed": "2023-12-15T17:47:22.536806+00:00",
-        "last_updated": "2023-12-15T17:47:22.536806+00:00",
+        "last_changed": "2023-12-15T18:58:23.973011+00:00",
+        "last_updated": "2023-12-15T18:58:23.973011+00:00",
         "context": {
-          "id": "01HHQ9E3H8S5JH4PT5WJ9D9FMB",
+          "id": "01HHQDG53565XXCE6EE0KE856R",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
@@ -160,16 +182,16 @@
           "friendly_name": "Zigbee2MQTT Update",
           "supported_features": 25
         },
-        "last_changed": "2023-12-15T17:47:22.536930+00:00",
-        "last_updated": "2023-12-15T17:47:22.536930+00:00",
+        "last_changed": "2023-12-15T18:58:23.973119+00:00",
+        "last_updated": "2023-12-15T18:58:23.973119+00:00",
         "context": {
-          "id": "01HHQ9E3H8EQBM1887Q1VCEGCR",
+          "id": "01HHQDG5359P7CFTY7M9807KWZ",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
@@ -188,16 +210,16 @@
           "friendly_name": "Advanced SSH & Web Terminal Update",
           "supported_features": 25
         },
-        "last_changed": "2023-12-15T17:47:22.537040+00:00",
-        "last_updated": "2023-12-15T17:47:22.537040+00:00",
+        "last_changed": "2023-12-15T18:58:23.973214+00:00",
+        "last_updated": "2023-12-15T18:58:23.973214+00:00",
         "context": {
-          "id": "01HHQ9E3H9TH89QBGS4G3K50ZF",
+          "id": "01HHQDG535Z8TS7MNAHAEYNHTZ",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
@@ -216,44 +238,44 @@
           "friendly_name": "Terminal & SSH Update",
           "supported_features": 25
         },
-        "last_changed": "2023-12-15T17:47:22.537155+00:00",
-        "last_updated": "2023-12-15T17:47:22.537155+00:00",
+        "last_changed": "2023-12-15T18:58:23.973342+00:00",
+        "last_updated": "2023-12-15T18:58:23.973342+00:00",
         "context": {
-          "id": "01HHQ9E3H9E41E06ARNY7VC3T6",
+          "id": "01HHQDG535P1EC7GBB0EJF6S0K",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
-        "entity_id": "update.git_pull_update",
+        "entity_id": "update.studio_code_server_update",
         "state": "off",
         "attributes": {
-          "auto_update": true,
-          "installed_version": "7.13.1",
+          "auto_update": false,
+          "installed_version": "5.14.2",
           "in_progress": false,
-          "latest_version": "7.13.1",
-          "release_summary": "# Changelog\n\n## 7.13.1\n\n- Update Home Assistant CLI to 4.12.2\n\n## 7.13.0\n\n- Update Home Assistant CLI to 4.12.1\n- Upgrade base image to Alpine 3.13\n- Supress a shellcheck warning happening in CI\n\n## 7.12.2\n\n- Update Home Assistant CLI to 4.11.0\n\n## 7.12.1",
+          "latest_version": "5.14.2",
+          "release_summary": "## What’s changed\n\n## 🐛 Bug fixes\n\n- Fix unbound variable in log warning message @frenck ([#736](https://github.com/hassio-addons/addon-vscode/pull/736))\n",
           "release_url": null,
           "skipped_version": null,
-          "title": "Git pull",
-          "entity_picture": "/api/hassio/addons/core_git_pull/icon",
-          "friendly_name": "Git pull Update",
+          "title": "Studio Code Server",
+          "entity_picture": "/api/hassio/addons/a0d7b954_vscode/icon",
+          "friendly_name": "Studio Code Server Update",
           "supported_features": 25
         },
-        "last_changed": "2023-12-15T17:47:22.537268+00:00",
-        "last_updated": "2023-12-15T17:47:22.537268+00:00",
+        "last_changed": "2023-12-15T18:58:23.973516+00:00",
+        "last_updated": "2023-12-15T18:58:23.973516+00:00",
         "context": {
-          "id": "01HHQ9E3H9KMRW991894ZMWGP7",
+          "id": "01HHQDG5356BHWP5WBRGQT5QGM",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
@@ -272,16 +294,16 @@
           "friendly_name": "Home Assistant Operating System Update",
           "supported_features": 3
         },
-        "last_changed": "2023-12-15T17:47:22.537582+00:00",
-        "last_updated": "2023-12-15T17:47:22.537582+00:00",
+        "last_changed": "2023-12-15T18:58:23.973643+00:00",
+        "last_updated": "2023-12-15T18:58:23.973643+00:00",
         "context": {
-          "id": "01HHQ9E3H9D56PEA0ZY3M0YMFE",
+          "id": "01HHQDG535SM3M9396ZT1N0N3N",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
@@ -290,16 +312,16 @@
         "attributes": {
           "friendly_name": "Google en com"
         },
-        "last_changed": "2023-12-15T17:42:22.881421+00:00",
-        "last_updated": "2023-12-15T17:42:22.881421+00:00",
+        "last_changed": "2023-12-15T18:58:26.199033+00:00",
+        "last_updated": "2023-12-15T18:58:26.199033+00:00",
         "context": {
-          "id": "01HHQ94YX193TNH9G2KCNEGRGD",
+          "id": "01HHQDG78QPDKSMCT2EQCA6WQG",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
@@ -308,16 +330,34 @@
         "attributes": {
           "friendly_name": "Google en com"
         },
-        "last_changed": "2023-12-15T17:42:22.881539+00:00",
-        "last_updated": "2023-12-15T17:42:22.881539+00:00",
+        "last_changed": "2023-12-15T18:58:26.199122+00:00",
+        "last_updated": "2023-12-15T18:58:26.199122+00:00",
         "context": {
-          "id": "01HHQ94YX18G2VTW61TFX1KE5P",
+          "id": "01HHQDG78QA35WZJJVWCH991ZF",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "tts.google_en_com_3",
+        "state": "unknown",
+        "attributes": {
+          "friendly_name": "Google en com"
+        },
+        "last_changed": "2023-12-15T18:58:26.199573+00:00",
+        "last_updated": "2023-12-15T18:58:26.199573+00:00",
+        "context": {
+          "id": "01HHQDG78Q042WZZDCQZVBPHXV",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
@@ -329,10 +369,10 @@
           "icon": "mdi:battery-charging-10",
           "friendly_name": "M2102J20SG Battery level"
         },
-        "last_changed": "2023-12-15T17:42:22.890055+00:00",
-        "last_updated": "2023-12-15T17:42:22.890055+00:00",
+        "last_changed": "2023-12-15T18:58:26.204003+00:00",
+        "last_updated": "2023-12-15T18:58:26.204003+00:00",
         "context": {
-          "id": "01HHQ94YXA1QPAYDNZ1SJMGKNR",
+          "id": "01HHQDG78W38ZACDFBSK1K3Z2Q",
           "parent_id": null,
           "user_id": null
         }
@@ -341,7 +381,7 @@
         "native_value": 13,
         "native_unit_of_measurement": "%"
       },
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
@@ -351,10 +391,10 @@
           "icon": "mdi:battery-plus",
           "friendly_name": "M2102J20SG Battery state"
         },
-        "last_changed": "2023-12-15T17:42:22.890144+00:00",
-        "last_updated": "2023-12-15T17:42:22.890144+00:00",
+        "last_changed": "2023-12-15T18:58:26.204104+00:00",
+        "last_updated": "2023-12-15T18:58:26.204104+00:00",
         "context": {
-          "id": "01HHQ94YXAYCWPXA2EWQ20Q2CK",
+          "id": "01HHQDG78WQ8SS658A1EZ4TBCC",
           "parent_id": null,
           "user_id": null
         }
@@ -363,7 +403,7 @@
         "native_value": "charging",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
@@ -373,10 +413,10 @@
           "icon": "mdi:power-plug",
           "friendly_name": "M2102J20SG Charger type"
         },
-        "last_changed": "2023-12-15T17:42:22.890220+00:00",
-        "last_updated": "2023-12-15T17:42:22.890220+00:00",
+        "last_changed": "2023-12-15T18:58:26.204192+00:00",
+        "last_updated": "2023-12-15T18:58:26.204192+00:00",
         "context": {
-          "id": "01HHQ94YXA4Q6RZ5K0Q81WT363",
+          "id": "01HHQDG78W4MJ68MZK54E7XB20",
           "parent_id": null,
           "user_id": null
         }
@@ -385,7 +425,7 @@
         "native_value": "ac",
         "native_unit_of_measurement": null
       },
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
@@ -395,84 +435,265 @@
           "source_type": "gps",
           "friendly_name": "M2102J20SG"
         },
-        "last_changed": "2023-12-15T17:42:22.891604+00:00",
-        "last_updated": "2023-12-15T17:42:22.891604+00:00",
+        "last_changed": "2023-12-15T18:58:26.204444+00:00",
+        "last_updated": "2023-12-15T18:58:26.204444+00:00",
         "context": {
-          "id": "01HHQ94YXBWHSHQWW1X0X5D426",
+          "id": "01HHQDG78WJ8PC5NF9GBBQZHM5",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
-        "entity_id": "person.relizerel161",
+        "entity_id": "sensor.mi_4186994645_message",
+        "state": "Roborock S7 MaxV: Finished cleaning. Returning to the dock.",
+        "attributes": {
+          "entity_class": "MihomeMessageSensor",
+          "filter_homes": [],
+          "exclude_types": [
+            13
+          ],
+          "msg_id": 1735304602520010752,
+          "is_new": 1,
+          "type": 6,
+          "title": "Finished cleaning. Returning to the dock.",
+          "content": "Roborock S7 MaxV",
+          "user_id": 4186994645,
+          "ctime": 1702563832,
+          "timestamp": "2023-12-14T17:23:52+03:00",
+          "model": "roborock.vacuum.a27",
+          "device_id": "535868969",
+          "home_name": "",
+          "room_name": "Гостиная",
+          "event": "8.6",
+          "event_data": [],
+          "prev_message": "Центральный контроллер Xiaomi Smart Home Hub 2   : Центральный контроллер Xiaomi Smart Home Hub 2    08:20 went offline",
+          "icon": "mdi:message",
+          "friendly_name": "Xiaomi 4186994645 message"
+        },
+        "last_changed": "2023-12-15T18:58:26.725479+00:00",
+        "last_updated": "2023-12-15T18:58:26.725479+00:00",
+        "context": {
+          "id": "01HHQDG7S52JAA6KFDR4FQTQZ6",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "state": "Roborock S7 MaxV: Finished cleaning. Returning to the dock.",
+        "attrs": {
+          "entity_class": "MihomeMessageSensor",
+          "filter_homes": [],
+          "exclude_types": [
+            13
+          ],
+          "msg_id": 1735304602520010752,
+          "is_new": 1,
+          "type": 6,
+          "title": "Finished cleaning. Returning to the dock.",
+          "content": "Roborock S7 MaxV",
+          "user_id": 4186994645,
+          "ctime": 1702563832,
+          "timestamp": "2023-12-14T17:23:52+03:00",
+          "model": "roborock.vacuum.a27",
+          "device_id": "535868969",
+          "home_name": "",
+          "room_name": "Гостиная",
+          "event": "8.6",
+          "event_data": [],
+          "prev_message": "Центральный контроллер Xiaomi Smart Home Hub 2   : Центральный контроллер Xiaomi Smart Home Hub 2    08:20 went offline"
+        }
+      },
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.roborock_a27_f729_segment_16",
         "state": "unknown",
         "attributes": {
-          "editable": true,
-          "id": "relizerel161",
-          "user_id": "4c2ff019c93641eabb6805fd5f8dc3be",
-          "device_trackers": [],
-          "friendly_name": "relizerel161"
+          "entity_class": "ButtonSubEntity",
+          "parent_entity_id": "vacuum.roborock_a27_f729_robot_cleaner",
+          "room_id": "23607",
+          "friendly_name": "Roborock S7 MaxV 16",
+          "supported_features": 0
         },
-        "last_changed": "2023-12-15T17:42:52.825409+00:00",
-        "last_updated": "2023-12-15T17:42:52.825409+00:00",
+        "last_changed": "2023-12-15T19:06:54.053169+00:00",
+        "last_updated": "2023-12-15T19:06:54.053169+00:00",
         "context": {
-          "id": "01HHQ95W4S4MJ68MZK54E7XB20",
+          "id": "01HHQDZQ75Z01BAZFKPRMQ7Z1E",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
-        "entity_id": "tts.google_en_com_3",
+        "entity_id": "button.roborock_a27_f729_segment_17",
         "state": "unknown",
         "attributes": {
-          "friendly_name": "Google en com"
+          "entity_class": "ButtonSubEntity",
+          "parent_entity_id": "vacuum.roborock_a27_f729_robot_cleaner",
+          "room_id": "23608",
+          "friendly_name": "Roborock S7 MaxV 17",
+          "supported_features": 0
         },
-        "last_changed": "2023-12-15T17:42:57.017961+00:00",
-        "last_updated": "2023-12-15T17:42:57.017961+00:00",
+        "last_changed": "2023-12-15T19:06:54.053392+00:00",
+        "last_updated": "2023-12-15T19:06:54.053392+00:00",
         "context": {
-          "id": "01HHQ9607S3ENQW67X0TD4Q1TY",
+          "id": "01HHQDZQ75K6J6A46DR5PRNY58",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
     },
     {
       "state": {
-        "entity_id": "update.code_server_vscode_update",
-        "state": "off",
+        "entity_id": "button.roborock_a27_f729_segment_18",
+        "state": "unknown",
         "attributes": {
-          "auto_update": false,
-          "installed_version": "4.19.1",
-          "in_progress": false,
-          "latest_version": "4.19.1",
-          "release_summary": "\n## 4.19.1 (02-12-2023)\n- Update to latest version from linuxserver/docker-code-server\n\n## 4.19.0 (19-11-2023)\n- Update to latest version from linuxserver/docker-code-server\n\n## 4.18.0 (21-10-2023)\n- Update to latest version from linuxserver/docker-code-s",
-          "release_url": null,
-          "skipped_version": null,
-          "title": "Code-server (VScode)",
-          "entity_picture": "/api/hassio/addons/db21ed7f_code-server/icon",
-          "friendly_name": "Code-server (VScode) Update",
+          "entity_class": "ButtonSubEntity",
+          "parent_entity_id": "vacuum.roborock_a27_f729_robot_cleaner",
+          "room_id": "23609",
+          "friendly_name": "Roborock S7 MaxV 18",
+          "supported_features": 0
+        },
+        "last_changed": "2023-12-15T19:06:54.053603+00:00",
+        "last_updated": "2023-12-15T19:06:54.053603+00:00",
+        "context": {
+          "id": "01HHQDZQ758RKHTA6HJKFNJT8H",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.roborock_a27_f729_segment_19",
+        "state": "unknown",
+        "attributes": {
+          "entity_class": "ButtonSubEntity",
+          "parent_entity_id": "vacuum.roborock_a27_f729_robot_cleaner",
+          "room_id": "23597",
+          "friendly_name": "Roborock S7 MaxV Гостиная",
+          "supported_features": 0
+        },
+        "last_changed": "2023-12-15T19:06:54.053817+00:00",
+        "last_updated": "2023-12-15T19:06:54.053817+00:00",
+        "context": {
+          "id": "01HHQDZQ75D21N6VV3B5J10QR9",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.roborock_a27_f729_segment_20",
+        "state": "unknown",
+        "attributes": {
+          "entity_class": "ButtonSubEntity",
+          "parent_entity_id": "vacuum.roborock_a27_f729_robot_cleaner",
+          "room_id": "23611",
+          "friendly_name": "Roborock S7 MaxV 20",
+          "supported_features": 0
+        },
+        "last_changed": "2023-12-15T19:06:54.054029+00:00",
+        "last_updated": "2023-12-15T19:06:54.054029+00:00",
+        "context": {
+          "id": "01HHQDZQ768AB12DZKWYJMEXE4",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "button.roborock_a27_f729_segment_21",
+        "state": "unknown",
+        "attributes": {
+          "entity_class": "ButtonSubEntity",
+          "parent_entity_id": "vacuum.roborock_a27_f729_robot_cleaner",
+          "room_id": "23610",
+          "friendly_name": "Roborock S7 MaxV 21",
+          "supported_features": 0
+        },
+        "last_changed": "2023-12-15T19:06:54.054236+00:00",
+        "last_updated": "2023-12-15T19:06:54.054236+00:00",
+        "context": {
+          "id": "01HHQDZQ7679KY5WHYEFMP095A",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": null,
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "number.viomi_v9_2720_countdown_time",
+        "state": "0",
+        "attributes": {
+          "min": 0,
+          "max": 24,
+          "step": 0.5,
+          "mode": "auto",
+          "entity_class": "MiotNumberSubEntity",
+          "parent_entity_id": "climate.viomi_v9_2720_heater",
+          "service_description": "Countdown",
+          "property_description": "Countdown Time",
+          "countdown.countdown_time": 0,
+          "unit_of_measurement": "hours",
+          "friendly_name": "Viomi Smart Heater Pro2 (Bluetooth Version) Countdown Time",
+          "supported_features": 0
+        },
+        "last_changed": "2023-12-15T19:07:54.751585+00:00",
+        "last_updated": "2023-12-15T19:07:54.751585+00:00",
+        "context": {
+          "id": "01HHQE1JFZFGHD4B6A6H3AF971",
+          "parent_id": null,
+          "user_id": null
+        }
+      },
+      "extra_data": {
+        "native_max_value": 24,
+        "native_min_value": 0,
+        "native_step": null,
+        "native_unit_of_measurement": "hours",
+        "native_value": 0
+      },
+      "last_seen": "2023-12-15T19:13:42.589394+00:00"
+    },
+    {
+      "state": {
+        "entity_id": "update.git_pull_update",
+        "state": "unavailable",
+        "attributes": {
+          "friendly_name": "Git pull Update",
           "supported_features": 25
         },
-        "last_changed": "2023-12-15T17:47:22.537444+00:00",
-        "last_updated": "2023-12-15T17:47:22.537444+00:00",
+        "last_changed": "2023-12-15T19:03:24.203955+00:00",
+        "last_updated": "2023-12-15T19:03:24.203955+00:00",
         "context": {
-          "id": "01HHQ9E3H94NDGB43EPFXX67E8",
+          "id": "01HHQDSA9BDXP33XZPJQ0XS90J",
           "parent_id": null,
           "user_id": null
         }
       },
       "extra_data": null,
-      "last_seen": "2023-12-15T18:12:39.343286+00:00"
+      "last_seen": "2023-12-15T19:03:24.205647+00:00"
     },
     {
       "state": {
@@ -543,66 +764,22 @@
     },
     {
       "state": {
-        "entity_id": "sensor.mi_4186994645_message",
-        "state": "Центральный контроллер Xiaomi Smart Home Hub 2   : Центральный контроллер Xiaomi Smart Home Hub 2    08:20 went offline",
+        "entity_id": "update.code_server_vscode_update",
+        "state": "unavailable",
         "attributes": {
-          "entity_class": "MihomeMessageSensor",
-          "filter_homes": [],
-          "exclude_types": [
-            13
-          ],
-          "msg_id": 1734367629311623168,
-          "is_new": 0,
-          "type": 6,
-          "title": "Центральный контроллер Xiaomi Smart Home Hub 2    08:20 went offline",
-          "content": "Центральный контроллер Xiaomi Smart Home Hub 2   ",
-          "user_id": 4186994645,
-          "ctime": 1702340440,
-          "timestamp": "2023-12-12T03:20:40+03:00",
-          "model": "lumi.gateway.mgl001",
-          "device_id": "551078423",
-          "home_name": null,
-          "room_name": null,
-          "event": "device_offlinestatus",
-          "event_data": "offline",
-          "prev_message": "Roborock S7 MaxV: Уборка завершена. Возвращаюсь к док-станции.",
-          "icon": "mdi:message",
-          "friendly_name": "Xiaomi 4186994645 message"
+          "friendly_name": "Code-server (VScode) Update",
+          "supported_features": 25
         },
-        "last_changed": "2023-12-12T22:00:19.848217+00:00",
-        "last_updated": "2023-12-12T22:00:19.848217+00:00",
+        "last_changed": "2023-12-15T18:17:22.663689+00:00",
+        "last_updated": "2023-12-15T18:17:22.663689+00:00",
         "context": {
-          "id": "01HHG0Q4482JAA6KFDR4FQTQZ6",
+          "id": "01HHQB51F7742QYZ8K4R0KV12Y",
           "parent_id": null,
           "user_id": null
         }
       },
-      "extra_data": {
-        "state": "Центральный контроллер Xiaomi Smart Home Hub 2   : Центральный контроллер Xiaomi Smart Home Hub 2    08:20 went offline",
-        "attrs": {
-          "entity_class": "MihomeMessageSensor",
-          "filter_homes": [],
-          "exclude_types": [
-            13
-          ],
-          "msg_id": 1734367629311623168,
-          "is_new": 0,
-          "type": 6,
-          "title": "Центральный контроллер Xiaomi Smart Home Hub 2    08:20 went offline",
-          "content": "Центральный контроллер Xiaomi Smart Home Hub 2   ",
-          "user_id": 4186994645,
-          "ctime": 1702340440,
-          "timestamp": "2023-12-12T03:20:40+03:00",
-          "model": "lumi.gateway.mgl001",
-          "device_id": "551078423",
-          "home_name": null,
-          "room_name": null,
-          "event": "device_offlinestatus",
-          "event_data": "offline",
-          "prev_message": "Roborock S7 MaxV: Уборка завершена. Возвращаюсь к док-станции."
-        }
-      },
-      "last_seen": "2023-12-13T05:24:13.783683+00:00"
+      "extra_data": null,
+      "last_seen": "2023-12-15T18:17:22.664455+00:00"
     }
   ]
 }

@@ -73,19 +73,6 @@
         "disabled_by": null
       },
       {
-        "entry_id": "a93b8812f0ac265ff27eba3b4c2a3306",
-        "version": 1,
-        "domain": "radio_browser",
-        "title": "Radio Browser",
-        "data": {},
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "onboarding",
-        "unique_id": null,
-        "disabled_by": null
-      },
-      {
         "entry_id": "476bc1dba5811e884acf66705390837b",
         "version": 1,
         "domain": "met",
@@ -266,25 +253,6 @@
         "disabled_by": null
       },
       {
-        "entry_id": "f34ab84dea904e59b76c15b122bdc870",
-        "version": 1,
-        "domain": "github",
-        "title": "",
-        "data": {
-          "access_token": "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"
-        },
-        "options": {
-          "repositories": [
-            "relizerel161/homeAssistant"
-          ]
-        },
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "user",
-        "unique_id": null,
-        "disabled_by": null
-      },
-      {
         "entry_id": "1a142ab41b2df9f3c44da94dffc7e548",
         "version": 1,
         "domain": "google_translate",
@@ -316,19 +284,6 @@
         "disabled_by": null
       },
       {
-        "entry_id": "38fb6512010130ea12684d564113ab5f",
-        "version": 1,
-        "domain": "radio_browser",
-        "title": "Radio Browser",
-        "data": {},
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "onboarding",
-        "unique_id": null,
-        "disabled_by": null
-      },
-      {
         "entry_id": "da504fcc0fd87b38735310cfbc3c70b9",
         "version": 1,
         "domain": "google_translate",
@@ -352,19 +307,6 @@
         "data": {
           "track_home": true
         },
-        "options": {},
-        "pref_disable_new_entities": false,
-        "pref_disable_polling": false,
-        "source": "onboarding",
-        "unique_id": null,
-        "disabled_by": null
-      },
-      {
-        "entry_id": "c6a272d73205f21003fb98f7ff46b823",
-        "version": 1,
-        "domain": "radio_browser",
-        "title": "Radio Browser",
-        "data": {},
         "options": {},
         "pref_disable_new_entities": false,
         "pref_disable_polling": false,
@@ -409,6 +351,70 @@
         "pref_disable_polling": false,
         "source": "bluetooth",
         "unique_id": "A4:C1:38:5A:75:3C",
+        "disabled_by": null
+      },
+      {
+        "entry_id": "1fb3bc048c1a1f888805e867891400ca",
+        "version": 1,
+        "domain": "xiaomi_miot",
+        "title": "Xiaomi: 4186994645",
+        "data": {
+          "username": "relizerel161@gmail.com",
+          "password": "1590753Aa",
+          "server_country": "ru",
+          "user_id": "4186994645",
+          "service_token": "5XVMR7DETuv++7hC9m7QKsXW870ztSpACPlYPzG2SxP+5PkXPim6U9S/ht3+m1K9+/Uku/09L2Jcy+JRl40x33Vzj9bZw/nvCkoj/YQn0DZPhHcREONBSFuiPjb+sg7XEEXwtR5m470NG/j/jfYsSd2M/H1INSlHRtyrV8H7Q4w=",
+          "ssecurity": "4RrqCIZvU48kzbAFaqJHsg==",
+          "sid": "xiaomiio",
+          "device_id": "HD2M1KTJ9F42WBV2",
+          "conn_mode": "auto",
+          "filter_did": "exclude",
+          "did_list": [
+            "551078423",
+            "535868969",
+            "556648974",
+            "blt.6.1g1vaf6fcsk00",
+            "blt.6.1g2cpjlhksg00"
+          ],
+          "config_version": 0.3
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
+        "disabled_by": null
+      },
+      {
+        "entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "version": 1,
+        "domain": "xiaomi_miot",
+        "title": "Xiaomi: 4186994645",
+        "data": {
+          "username": "relizerel161@gmail.com",
+          "password": "1590753Aa",
+          "server_country": "ru",
+          "user_id": "4186994645",
+          "service_token": "VNDOCTRvlQN4zos7T3GMnVBPFoui0wFlR6amEf1L/Dhnl56N77OnxzFIgkp0h/d+V5Qqi1xFtSgSclna80LEnpMiCU+FCQvUtMosYOUKOWT4//Eu46K94DHGy7l6cqrl8CR+jxmlx04wiAbemAHLoMAa6Afs2I81D+bSRiitSCk=",
+          "ssecurity": "TfAdXLp7kb3sf3C6CiCWrg==",
+          "sid": "xiaomiio",
+          "device_id": "HD2M1KTJ9F42WBV2",
+          "conn_mode": "auto",
+          "filter_did": "include",
+          "did_list": [
+            "535868969",
+            "551078423",
+            "556648974",
+            "blt.6.1g1vaf6fcsk00",
+            "blt.6.1g2cpjlhksg00"
+          ],
+          "config_version": 0.3
+        },
+        "options": {},
+        "pref_disable_new_entities": false,
+        "pref_disable_polling": false,
+        "source": "user",
+        "unique_id": null,
         "disabled_by": null
       }
     ]

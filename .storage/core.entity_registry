@@ -773,7 +773,7 @@
         "config_entry_id": "5f9ee933312837c0450c4a3601ce9384",
         "device_class": null,
         "device_id": null,
-        "disabled_by": null,
+        "disabled_by": "user",
         "entity_category": null,
         "entity_id": "todo.shopping_list",
         "hidden_by": null,
@@ -800,9 +800,9 @@
         "aliases": [],
         "area_id": null,
         "capabilities": null,
-        "config_entry_id": "476bc1dba5811e884acf66705390837b",
+        "config_entry_id": "11addfdf3d524c6a8c76ba2db36dc67e",
         "device_class": null,
-        "device_id": "0c5dfdba9a67c03fac1ca7d4a7b2a1bb",
+        "device_id": "60652e7903b0ef9392c1b9ff6ab22ca5",
         "disabled_by": null,
         "entity_category": null,
         "entity_id": "weather.forecast_home_assistant",
@@ -5086,562 +5086,6 @@
       {
         "aliases": [],
         "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "efd0dcf0551da70093b7b07d0b984d4d",
-        "device_class": null,
-        "device_id": "16e6874d2626479c1bb3cf572399f815",
-        "disabled_by": "integration",
-        "entity_category": null,
-        "entity_id": "binary_sensor.git_pull_running",
-        "hidden_by": null,
-        "icon": null,
-        "id": "7814da0fe1eb511aebd6cb79b9dd3552",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": "running",
-        "original_icon": null,
-        "original_name": "Работает",
-        "platform": "hassio",
-        "supported_features": 0,
-        "translation_key": "state",
-        "unique_id": "core_git_pull_state",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "efd0dcf0551da70093b7b07d0b984d4d",
-        "device_class": null,
-        "device_id": "16e6874d2626479c1bb3cf572399f815",
-        "disabled_by": "integration",
-        "entity_category": null,
-        "entity_id": "sensor.git_pull_version",
-        "hidden_by": null,
-        "icon": null,
-        "id": "580974c8be084878d26e1ec59c9066a8",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Версия",
-        "platform": "hassio",
-        "supported_features": 0,
-        "translation_key": "version",
-        "unique_id": "core_git_pull_version",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "efd0dcf0551da70093b7b07d0b984d4d",
-        "device_class": null,
-        "device_id": "16e6874d2626479c1bb3cf572399f815",
-        "disabled_by": "integration",
-        "entity_category": null,
-        "entity_id": "sensor.git_pull_newest_version",
-        "hidden_by": null,
-        "icon": null,
-        "id": "7b667159725b854baf2dabb5668edcc3",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Новая версия",
-        "platform": "hassio",
-        "supported_features": 0,
-        "translation_key": "version_latest",
-        "unique_id": "core_git_pull_version_latest",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
-        "config_entry_id": "efd0dcf0551da70093b7b07d0b984d4d",
-        "device_class": null,
-        "device_id": "16e6874d2626479c1bb3cf572399f815",
-        "disabled_by": "integration",
-        "entity_category": null,
-        "entity_id": "sensor.git_pull_cpu_percent",
-        "hidden_by": null,
-        "icon": null,
-        "id": "a37d686ba633abfd19cd020d5882988f",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:cpu-64-bit",
-        "original_name": "Использование ЦП",
-        "platform": "hassio",
-        "supported_features": 0,
-        "translation_key": "cpu_percent",
-        "unique_id": "core_git_pull_cpu_percent",
-        "previous_unique_id": null,
-        "unit_of_measurement": "%"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
-        "config_entry_id": "efd0dcf0551da70093b7b07d0b984d4d",
-        "device_class": null,
-        "device_id": "16e6874d2626479c1bb3cf572399f815",
-        "disabled_by": "integration",
-        "entity_category": null,
-        "entity_id": "sensor.git_pull_memory_percent",
-        "hidden_by": null,
-        "icon": null,
-        "id": "642877c4ac02dd12eb695a5181f84c4f",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:memory",
-        "original_name": "Использование ОЗУ",
-        "platform": "hassio",
-        "supported_features": 0,
-        "translation_key": "memory_percent",
-        "unique_id": "core_git_pull_memory_percent",
-        "previous_unique_id": null,
-        "unit_of_measurement": "%"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "efd0dcf0551da70093b7b07d0b984d4d",
-        "device_class": null,
-        "device_id": "16e6874d2626479c1bb3cf572399f815",
-        "disabled_by": null,
-        "entity_category": "config",
-        "entity_id": "update.git_pull_update",
-        "hidden_by": null,
-        "icon": null,
-        "id": "2062f24c963d0e2af267c6d9f0ecbbec",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": null,
-        "original_name": "Update",
-        "platform": "hassio",
-        "supported_features": 25,
-        "translation_key": null,
-        "unique_id": "core_git_pull_version_latest",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
-        "config_entry_id": "f34ab84dea904e59b76c15b122bdc870",
-        "device_class": null,
-        "device_id": "ed683b270028b3d84abe68b6da90ddc5",
-        "disabled_by": null,
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.relizerel161_homeassistant_discussions",
-        "hidden_by": null,
-        "icon": null,
-        "id": "9cb53d9a6c118bb3c0c2878b1d91c2f8",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:github",
-        "original_name": "Обсуждения",
-        "platform": "github",
-        "supported_features": 0,
-        "translation_key": "discussions_count",
-        "unique_id": "730885476_discussions_count",
-        "previous_unique_id": null,
-        "unit_of_measurement": "Discussions"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
-        "config_entry_id": "f34ab84dea904e59b76c15b122bdc870",
-        "device_class": null,
-        "device_id": "ed683b270028b3d84abe68b6da90ddc5",
-        "disabled_by": null,
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.relizerel161_homeassistant_stars",
-        "hidden_by": null,
-        "icon": null,
-        "id": "df231be291b78624d9a9aa94408caa3c",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:star",
-        "original_name": "Звезд",
-        "platform": "github",
-        "supported_features": 0,
-        "translation_key": "stargazers_count",
-        "unique_id": "730885476_stargazers_count",
-        "previous_unique_id": null,
-        "unit_of_measurement": "Stars"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
-        "config_entry_id": "f34ab84dea904e59b76c15b122bdc870",
-        "device_class": null,
-        "device_id": "ed683b270028b3d84abe68b6da90ddc5",
-        "disabled_by": null,
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.relizerel161_homeassistant_watchers",
-        "hidden_by": null,
-        "icon": null,
-        "id": "f21ab733ce178f09554b2bf7a26a08c8",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:glasses",
-        "original_name": "Наблюдателей",
-        "platform": "github",
-        "supported_features": 0,
-        "translation_key": "subscribers_count",
-        "unique_id": "730885476_subscribers_count",
-        "previous_unique_id": null,
-        "unit_of_measurement": "Watchers"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
-        "config_entry_id": "f34ab84dea904e59b76c15b122bdc870",
-        "device_class": null,
-        "device_id": "ed683b270028b3d84abe68b6da90ddc5",
-        "disabled_by": null,
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.relizerel161_homeassistant_forks",
-        "hidden_by": null,
-        "icon": null,
-        "id": "6490375dd795ffcab6d9e8b29d45976d",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:source-fork",
-        "original_name": "Вилки",
-        "platform": "github",
-        "supported_features": 0,
-        "translation_key": "forks_count",
-        "unique_id": "730885476_forks_count",
-        "previous_unique_id": null,
-        "unit_of_measurement": "Forks"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
-        "config_entry_id": "f34ab84dea904e59b76c15b122bdc870",
-        "device_class": null,
-        "device_id": "ed683b270028b3d84abe68b6da90ddc5",
-        "disabled_by": null,
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.relizerel161_homeassistant_issues",
-        "hidden_by": null,
-        "icon": null,
-        "id": "ba51a9a8535a52952318a8f3c4eb999b",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:github",
-        "original_name": "Проблемы",
-        "platform": "github",
-        "supported_features": 0,
-        "translation_key": "issues_count",
-        "unique_id": "730885476_issues_count",
-        "previous_unique_id": null,
-        "unit_of_measurement": "Issues"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": {
-          "state_class": "measurement"
-        },
-        "config_entry_id": "f34ab84dea904e59b76c15b122bdc870",
-        "device_class": null,
-        "device_id": "ed683b270028b3d84abe68b6da90ddc5",
-        "disabled_by": null,
-        "entity_category": "diagnostic",
-        "entity_id": "sensor.relizerel161_homeassistant_pull_requests",
-        "hidden_by": null,
-        "icon": null,
-        "id": "430b34c0a33950faa39e7dbeac78c5f5",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:github",
-        "original_name": "Запросы на вытягивание",
-        "platform": "github",
-        "supported_features": 0,
-        "translation_key": "pulls_count",
-        "unique_id": "730885476_pulls_count",
-        "previous_unique_id": null,
-        "unit_of_measurement": "Pull Requests"
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "f34ab84dea904e59b76c15b122bdc870",
-        "device_class": null,
-        "device_id": "ed683b270028b3d84abe68b6da90ddc5",
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "sensor.relizerel161_homeassistant_latest_commit",
-        "hidden_by": null,
-        "icon": null,
-        "id": "370f6feb715b35ac760eb378bd2944a9",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:github",
-        "original_name": "Последняя фиксация",
-        "platform": "github",
-        "supported_features": 0,
-        "translation_key": "latest_commit",
-        "unique_id": "730885476_latest_commit",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "f34ab84dea904e59b76c15b122bdc870",
-        "device_class": null,
-        "device_id": "ed683b270028b3d84abe68b6da90ddc5",
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "sensor.relizerel161_homeassistant_latest_discussion",
-        "hidden_by": null,
-        "icon": null,
-        "id": "26188ae4c84ea2fb67b4d5f7b0c597b0",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:github",
-        "original_name": "Последнее обсуждение",
-        "platform": "github",
-        "supported_features": 0,
-        "translation_key": "latest_discussion",
-        "unique_id": "730885476_latest_discussion",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "f34ab84dea904e59b76c15b122bdc870",
-        "device_class": null,
-        "device_id": "ed683b270028b3d84abe68b6da90ddc5",
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "sensor.relizerel161_homeassistant_latest_release",
-        "hidden_by": null,
-        "icon": null,
-        "id": "28d406c8658633959e41a08fddb7becc",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:github",
-        "original_name": "Последний релиз",
-        "platform": "github",
-        "supported_features": 0,
-        "translation_key": "latest_release",
-        "unique_id": "730885476_latest_release",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "f34ab84dea904e59b76c15b122bdc870",
-        "device_class": null,
-        "device_id": "ed683b270028b3d84abe68b6da90ddc5",
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "sensor.relizerel161_homeassistant_latest_issue",
-        "hidden_by": null,
-        "icon": null,
-        "id": "08a74ad8742d9500747c83afbda2bf24",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:github",
-        "original_name": "Последняя проблема",
-        "platform": "github",
-        "supported_features": 0,
-        "translation_key": "latest_issue",
-        "unique_id": "730885476_latest_issue",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "f34ab84dea904e59b76c15b122bdc870",
-        "device_class": null,
-        "device_id": "ed683b270028b3d84abe68b6da90ddc5",
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "sensor.relizerel161_homeassistant_latest_pull_request",
-        "hidden_by": null,
-        "icon": null,
-        "id": "935013ec6374c5201fa5de4a365ef9d2",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:github",
-        "original_name": "Последний запрос на вытягивание",
-        "platform": "github",
-        "supported_features": 0,
-        "translation_key": "latest_pull_request",
-        "unique_id": "730885476_latest_pull_request",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
-        "capabilities": null,
-        "config_entry_id": "f34ab84dea904e59b76c15b122bdc870",
-        "device_class": null,
-        "device_id": "ed683b270028b3d84abe68b6da90ddc5",
-        "disabled_by": null,
-        "entity_category": null,
-        "entity_id": "sensor.relizerel161_homeassistant_latest_tag",
-        "hidden_by": null,
-        "icon": null,
-        "id": "1b29a9c5dcc5178d715f38055cf2fc5c",
-        "has_entity_name": true,
-        "name": null,
-        "options": {
-          "conversation": {
-            "should_expose": false
-          }
-        },
-        "original_device_class": null,
-        "original_icon": "mdi:github",
-        "original_name": "Последний тег",
-        "platform": "github",
-        "supported_features": 0,
-        "translation_key": "latest_tag",
-        "unique_id": "730885476_latest_tag",
-        "previous_unique_id": null,
-        "unit_of_measurement": null
-      },
-      {
-        "aliases": [],
-        "area_id": null,
         "capabilities": {
           "state_class": "measurement"
         },
@@ -5877,6 +5321,10 @@
         "options": {
           "conversation": {
             "should_expose": true
+          },
+          "sensor": {
+            "unit_of_measurement": "°C",
+            "display_precision": null
           }
         },
         "original_device_class": "temperature",
@@ -5938,7 +5386,11 @@
         "id": "4b806aaa557c4abbd6a967f4f75f4bd5",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": "signal_strength",
         "original_icon": null,
         "original_name": "Signal Strength",
@@ -6094,7 +5546,11 @@
         "id": "3657c47324940bcb2547c0e2778288a6",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": "signal_strength",
         "original_icon": null,
         "original_name": "Signal Strength",
@@ -6250,7 +5706,11 @@
         "id": "3a3f896ab00a3f7f3b404ab9501a37b3",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": "signal_strength",
         "original_icon": null,
         "original_name": "Signal Strength",
@@ -6340,7 +5800,11 @@
         "id": "5924b762dca770b295a3d7f349247c80",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": "running",
         "original_icon": null,
         "original_name": "Работает",
@@ -6366,7 +5830,11 @@
         "id": "2605e12eaec2ed47e59b9f4fdcf87afe",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "Версия",
@@ -6392,7 +5860,11 @@
         "id": "8bb8af919ea0982e002d8d405d2cab05",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": null,
         "original_icon": null,
         "original_name": "Новая версия",
@@ -6420,7 +5892,11 @@
         "id": "8ddce3f89988df4db555aa85e2578a27",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": null,
         "original_icon": "mdi:cpu-64-bit",
         "original_name": "Использование ЦП",
@@ -6448,7 +5924,11 @@
         "id": "5253af18590a8a212455bb869aa98c7c",
         "has_entity_name": true,
         "name": null,
-        "options": {},
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
         "original_device_class": null,
         "original_icon": "mdi:memory",
         "original_name": "Использование ОЗУ",
@@ -6488,6 +5968,1115 @@
         "unique_id": "a0d7b954_vscode_version_latest",
         "previous_unique_id": null,
         "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "1fb3bc048c1a1f888805e867891400ca",
+        "device_class": null,
+        "device_id": "6b987773c1a8a63c435643ac49526900",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.xiaomi_ra67_4cee_router",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f7f270ea90b075071e3b4c78aeb91080",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Xiaomi_C78F Router Status",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "router",
+        "unique_id": "9c:9d:7e:45:4c:ee-1fb3bc048c1a1f888805e867891400ca-2",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "preset_modes": [
+            "Auto",
+            "Sleep",
+            "Favorite"
+          ]
+        },
+        "config_entry_id": "1fb3bc048c1a1f888805e867891400ca",
+        "device_class": null,
+        "device_id": "3446478f42e7f38151cc5e20e3bff2cf",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "fan.zhimi_v7_45ba_air_purifier",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3ea52facfac038d63a0ed08251c214cb",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Очиститель воздуха Air Purifier",
+        "platform": "xiaomi_miot",
+        "supported_features": 8,
+        "translation_key": "air_purifier",
+        "unique_id": "64:90:c1:f1:45:ba-1fb3bc048c1a1f888805e867891400ca-2",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "1fb3bc048c1a1f888805e867891400ca",
+        "device_class": null,
+        "device_id": "6b987773c1a8a63c435643ac49526900",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.xiaomi_ra67_4cee_network_connection_type",
+        "hidden_by": null,
+        "icon": null,
+        "id": "9bc3a9d87f0d29d4c823df0e62cff843",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Xiaomi_C78F Router Network Connection Type",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "router.network_connection_type",
+        "unique_id": "9c:9d:7e:45:4c:ee-1fb3bc048c1a1f888805e867891400ca-router-2.network_connection_type-4",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "1fb3bc048c1a1f888805e867891400ca",
+        "device_class": null,
+        "device_id": "6b987773c1a8a63c435643ac49526900",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.xiaomi_ra67_4cee_wifi_service_set_identifier",
+        "hidden_by": null,
+        "icon": null,
+        "id": "72d8b02dd6ea8a98bb03999208cd5c9c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Xiaomi_C78F WiFi Managerment Service Set Identifier",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "wifi.wifi_ssid",
+        "unique_id": "9c:9d:7e:45:4c:ee-1fb3bc048c1a1f888805e867891400ca-wifi-3.wifi_ssid-1",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "1fb3bc048c1a1f888805e867891400ca",
+        "device_class": null,
+        "device_id": "6b987773c1a8a63c435643ac49526900",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.xiaomi_ra67_4cee_wifi_bandwidth",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b9fea8b4f8890f74204d2434dab6fe22",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Xiaomi_C78F WiFi Managerment Bandwidth",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "wifi.wifi_bandwidth",
+        "unique_id": "9c:9d:7e:45:4c:ee-1fb3bc048c1a1f888805e867891400ca-wifi-3.wifi_bandwidth-8",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "1fb3bc048c1a1f888805e867891400ca",
+        "device_class": null,
+        "device_id": "6b987773c1a8a63c435643ac49526900",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.xiaomi_ra67_4cee_wifi_service_set_identifier_2",
+        "hidden_by": null,
+        "icon": null,
+        "id": "5774bffbabd6d5a7a66e0d66c635757f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Xiaomi_C78F Guest WiFi Service Set Identifier",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "guest_wifi.wifi_ssid",
+        "unique_id": "9c:9d:7e:45:4c:ee-1fb3bc048c1a1f888805e867891400ca-guest_wifi-4.wifi_ssid-2",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "1fb3bc048c1a1f888805e867891400ca",
+        "device_class": null,
+        "device_id": "6b987773c1a8a63c435643ac49526900",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.xiaomi_ra67_4cee_wifi_bandwidth_2",
+        "hidden_by": null,
+        "icon": null,
+        "id": "0f930854b3401c09bce82b6e5151f491",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Xiaomi_C78F Guest WiFi Bandwidth",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "guest_wifi.wifi_bandwidth",
+        "unique_id": "9c:9d:7e:45:4c:ee-1fb3bc048c1a1f888805e867891400ca-guest_wifi-4.wifi_bandwidth-7",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "1fb3bc048c1a1f888805e867891400ca",
+        "device_class": null,
+        "device_id": "6b987773c1a8a63c435643ac49526900",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "switch.xiaomi_ra67_4cee_switch_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "923061fb8fbbb9fb5210f453b998ecb0",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:power",
+        "original_name": "Xiaomi_C78F WiFi Managerment Статус переключателя",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "wifi.on",
+        "unique_id": "9c:9d:7e:45:4c:ee-1fb3bc048c1a1f888805e867891400ca-wifi-3.on-3",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "1fb3bc048c1a1f888805e867891400ca",
+        "device_class": null,
+        "device_id": "6b987773c1a8a63c435643ac49526900",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "switch.xiaomi_ra67_4cee_switch_status_2",
+        "hidden_by": null,
+        "icon": null,
+        "id": "c88abb773c99dcf712e16199880b4c63",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:power",
+        "original_name": "Xiaomi_C78F Guest WiFi Статус переключателя",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "guest_wifi.on",
+        "unique_id": "9c:9d:7e:45:4c:ee-1fb3bc048c1a1f888805e867891400ca-guest_wifi-4.on-1",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "8851adeb739d9ee6893825acab5154e4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.miaomiaoce_t2_f954_temperature_humidity_sensor",
+        "hidden_by": null,
+        "icon": null,
+        "id": "d9620cb8be2b3c5ca93d800017a90094",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Бокс2 температура датчик влажности",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "temperature_humidity_sensor",
+        "unique_id": "a4:c1:38:82:f9:54-4eb9172dbf8daf5831366300b1026608-2",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "4e32a91a7d7ffae64c0080acaee6c6eb",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.miaomiaoce_t2_0703_temperature_humidity_sensor",
+        "hidden_by": null,
+        "icon": null,
+        "id": "34ab8e5400a32221766b3e3f77278cfa",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Бокс1 температура датчик влажности",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "temperature_humidity_sensor",
+        "unique_id": "a4:c1:38:21:07:03-4eb9172dbf8daf5831366300b1026608-2",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "fan_speed_list": [
+            "тихий",
+            "базовый",
+            "сильный",
+            "максимальная скорость",
+            "Mop Only",
+            "Custom"
+          ]
+        },
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "bb45aca8801dabc057eff3c7a379417a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "vacuum.roborock_a27_f729_robot_cleaner",
+        "hidden_by": null,
+        "icon": null,
+        "id": "8d3c7a3af0bbc3dd5034b4d0ffbaed81",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Roborock S7 MaxV робот-пылесос",
+        "platform": "xiaomi_miot",
+        "supported_features": 13308,
+        "translation_key": "vacuum",
+        "unique_id": "b0:4a:39:4e:f7:29-4eb9172dbf8daf5831366300b1026608-2",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "bb45aca8801dabc057eff3c7a379417a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "button.roborock_a27_f729_segment_16",
+        "hidden_by": null,
+        "icon": null,
+        "id": "588c151612d603ef8bbaaaa0995885b6",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Roborock S7 MaxV 16",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "segment_16",
+        "unique_id": "b0:4a:39:4e:f7:29-4eb9172dbf8daf5831366300b1026608-2-segment_16",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "bb45aca8801dabc057eff3c7a379417a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "button.roborock_a27_f729_segment_17",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a9097d5191e7ac4d267e0b0858920c99",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Roborock S7 MaxV 17",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "segment_17",
+        "unique_id": "b0:4a:39:4e:f7:29-4eb9172dbf8daf5831366300b1026608-2-segment_17",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "bb45aca8801dabc057eff3c7a379417a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "button.roborock_a27_f729_segment_18",
+        "hidden_by": null,
+        "icon": null,
+        "id": "532f80483a5c7d923c338c669f8db1a8",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Roborock S7 MaxV 18",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "segment_18",
+        "unique_id": "b0:4a:39:4e:f7:29-4eb9172dbf8daf5831366300b1026608-2-segment_18",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "bb45aca8801dabc057eff3c7a379417a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "button.roborock_a27_f729_segment_19",
+        "hidden_by": null,
+        "icon": null,
+        "id": "38de61b25443035a3fe575c3c0eb555e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Roborock S7 MaxV Гостиная",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "segment_19",
+        "unique_id": "b0:4a:39:4e:f7:29-4eb9172dbf8daf5831366300b1026608-2-segment_19",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "bb45aca8801dabc057eff3c7a379417a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "button.roborock_a27_f729_segment_20",
+        "hidden_by": null,
+        "icon": null,
+        "id": "f00d1a065990cdbe3a449fb64d1288e8",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Roborock S7 MaxV 20",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "segment_20",
+        "unique_id": "b0:4a:39:4e:f7:29-4eb9172dbf8daf5831366300b1026608-2-segment_20",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "bb45aca8801dabc057eff3c7a379417a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "button.roborock_a27_f729_segment_21",
+        "hidden_by": null,
+        "icon": null,
+        "id": "aac1e2eeef00e48760dc695d12b2042c",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Roborock S7 MaxV 21",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "segment_21",
+        "unique_id": "b0:4a:39:4e:f7:29-4eb9172dbf8daf5831366300b1026608-2-segment_21",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "hvac_modes": [
+            "auto",
+            "off"
+          ],
+          "min_temp": 41,
+          "max_temp": 95,
+          "target_temp_step": 1
+        },
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "aa4ba20432fe6080b8a71d2d6a83fdd3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "climate.viomi_v9_2720_heater",
+        "hidden_by": null,
+        "icon": null,
+        "id": "4e969591a6ea298103f4f489c4580ca4",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Viomi Smart Heater Pro2 (Bluetooth Version) Heater",
+        "platform": "xiaomi_miot",
+        "supported_features": 1,
+        "translation_key": "heater",
+        "unique_id": "68:ab:bc:9e:27:20-4eb9172dbf8daf5831366300b1026608-2",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min_humidity": 0,
+          "max_humidity": 100
+        },
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "aa4ba20432fe6080b8a71d2d6a83fdd3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "humidifier.viomi_v9_2720_humidifier",
+        "hidden_by": null,
+        "icon": null,
+        "id": "455ce491a493f45e257448f592641323",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "humidifier",
+        "original_icon": null,
+        "original_name": "Viomi Smart Heater Pro2 (Bluetooth Version) Humidifier",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "humidifier",
+        "unique_id": "68:ab:bc:9e:27:20-4eb9172dbf8daf5831366300b1026608-4",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "4e32a91a7d7ffae64c0080acaee6c6eb",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.miaomiaoce_t2_0703_battery_level",
+        "hidden_by": null,
+        "icon": null,
+        "id": "036f7713d93371c4d9aeebc7cd073ce1",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": null,
+        "original_name": "Бокс1 уровень заряда батареи",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "battery.battery_level",
+        "unique_id": "a4:c1:38:21:07:03-4eb9172dbf8daf5831366300b1026608-battery-3.battery_level-1",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "4e32a91a7d7ffae64c0080acaee6c6eb",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.miaomiaoce_t2_0703_relative_humidity",
+        "hidden_by": null,
+        "icon": null,
+        "id": "3ca265f019fc137faf6be49abe8b1bf7",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "humidity",
+        "original_icon": null,
+        "original_name": "Бокс1 относительная влажность датчика температуры",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "temperature_humidity_sensor.relative_humidity",
+        "unique_id": "a4:c1:38:21:07:03-4eb9172dbf8daf5831366300b1026608-temperature_humidity_sensor-2.relative_humidity-2",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "8851adeb739d9ee6893825acab5154e4",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.miaomiaoce_t2_f954_battery_level",
+        "hidden_by": null,
+        "icon": null,
+        "id": "308ee19cbacc1f4fcd924fa9d8252acd",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": null,
+        "original_name": "Бокс2 уровень заряда батареи",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "battery.battery_level",
+        "unique_id": "a4:c1:38:82:f9:54-4eb9172dbf8daf5831366300b1026608-battery-3.battery_level-1",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "8851adeb739d9ee6893825acab5154e4",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.miaomiaoce_t2_f954_relative_humidity",
+        "hidden_by": null,
+        "icon": null,
+        "id": "6f435073b16c249cf2a2cd9e04249052",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": "humidity",
+        "original_icon": null,
+        "original_name": "Бокс2 относительная влажность датчика температуры",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "temperature_humidity_sensor.relative_humidity",
+        "unique_id": "a4:c1:38:82:f9:54-4eb9172dbf8daf5831366300b1026608-temperature_humidity_sensor-2.relative_humidity-2",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "bb45aca8801dabc057eff3c7a379417a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.roborock_a27_f729_props_clean_area",
+        "hidden_by": null,
+        "icon": null,
+        "id": "cc9f92b8d1b07d4bc281884d4780ced9",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Roborock S7 MaxV робот-пылесос props clean_area",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "props",
+        "unique_id": "b0:4a:39:4e:f7:29-4eb9172dbf8daf5831366300b1026608-props:clean_area",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "bb45aca8801dabc057eff3c7a379417a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.roborock_a27_f729_props_clean_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "2d78a07f71729564c5296f840acd0ca3",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Roborock S7 MaxV робот-пылесос props clean_time",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "props",
+        "unique_id": "b0:4a:39:4e:f7:29-4eb9172dbf8daf5831366300b1026608-props:clean_time",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "bb45aca8801dabc057eff3c7a379417a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.roborock_a27_f729_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "34c4f9f761cf4aa05c2c371bdad92a0d",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Roborock S7 MaxV статус робота-пылесоса",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "vacuum.status",
+        "unique_id": "b0:4a:39:4e:f7:29-4eb9172dbf8daf5831366300b1026608-vacuum-2.status-1",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Выключенный",
+            "Level1",
+            "Level2",
+            "Level3",
+            "Custom"
+          ]
+        },
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "bb45aca8801dabc057eff3c7a379417a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "select.roborock_a27_f729_water_level",
+        "hidden_by": null,
+        "icon": null,
+        "id": "30469c1ca254ae34ce891da6cd91fe5f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Roborock S7 MaxV Robot Cleaner water_level",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "vacuum.water_level",
+        "unique_id": "b0:4a:39:4e:f7:29-4eb9172dbf8daf5831366300b1026608-vacuum-2.water_level-102",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "bb45aca8801dabc057eff3c7a379417a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.roborock_a27_f729_filter_life_level",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bb02d9945e915aa524f3067f4ef3a037",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:percent",
+        "original_name": "Roborock S7 MaxV Filter Life Level",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "filter.filter_life_level",
+        "unique_id": "b0:4a:39:4e:f7:29-4eb9172dbf8daf5831366300b1026608-filter-11.filter_life_level-1",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "state_class": "measurement"
+        },
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "bb45aca8801dabc057eff3c7a379417a",
+        "disabled_by": null,
+        "entity_category": "diagnostic",
+        "entity_id": "sensor.roborock_a27_f729_battery_level",
+        "hidden_by": null,
+        "icon": null,
+        "id": "79be99c0eedd13ba63002eb3486324f2",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": "battery",
+        "original_icon": null,
+        "original_name": "Roborock S7 MaxV уровень заряда батареи",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "battery.battery_level",
+        "unique_id": "b0:4a:39:4e:f7:29-4eb9172dbf8daf5831366300b1026608-battery-3.battery_level-1",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "bb45aca8801dabc057eff3c7a379417a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.roborock_a27_f729_brush_life_level",
+        "hidden_by": null,
+        "icon": null,
+        "id": "17ecda76dd70bfd2ab3a4e4adce8a91f",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Roborock S7 MaxV Main Cleaning Brush Life Level",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "brush_cleaner.brush_life_level",
+        "unique_id": "b0:4a:39:4e:f7:29-4eb9172dbf8daf5831366300b1026608-brush_cleaner-9.brush_life_level-2",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "bb45aca8801dabc057eff3c7a379417a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "sensor.roborock_a27_f729_brush_life_level_2",
+        "hidden_by": null,
+        "icon": null,
+        "id": "dfa8fa34dc85efc90ccd29b7b326ab04",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Roborock S7 MaxV Side Cleaning Brush Life Level",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "brush_cleaner.brush_life_level",
+        "unique_id": "b0:4a:39:4e:f7:29-4eb9172dbf8daf5831366300b1026608-brush_cleaner-10.brush_life_level-2",
+        "previous_unique_id": null,
+        "unit_of_measurement": "%"
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "options": [
+            "Standard",
+            "Deep",
+            "Custom"
+          ]
+        },
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "bb45aca8801dabc057eff3c7a379417a",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "select.roborock_a27_f729_mop_mode",
+        "hidden_by": null,
+        "icon": null,
+        "id": "b7a7729633a9b52b48c10b6248ebfe33",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Roborock S7 MaxV Robot Cleaner mop_mode",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "vacuum.mop_mode",
+        "unique_id": "b0:4a:39:4e:f7:29-4eb9172dbf8daf5831366300b1026608-vacuum-2.mop_mode-103",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": null,
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "aa4ba20432fe6080b8a71d2d6a83fdd3",
+        "disabled_by": null,
+        "entity_category": null,
+        "entity_id": "switch.viomi_v9_2720_switch_status",
+        "hidden_by": null,
+        "icon": null,
+        "id": "bcd8a215615152c8b415d4c5de3be2c5",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": true
+          }
+        },
+        "original_device_class": null,
+        "original_icon": "mdi:power",
+        "original_name": "Viomi Smart Heater Pro2 (Bluetooth Version) Heater Статус переключателя",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "heater.on",
+        "unique_id": "68:ab:bc:9e:27:20-4eb9172dbf8daf5831366300b1026608-heater-2.on-1",
+        "previous_unique_id": null,
+        "unit_of_measurement": null
+      },
+      {
+        "aliases": [],
+        "area_id": null,
+        "capabilities": {
+          "min": 0,
+          "max": 24,
+          "step": 0.5,
+          "mode": "auto"
+        },
+        "config_entry_id": "4eb9172dbf8daf5831366300b1026608",
+        "device_class": null,
+        "device_id": "aa4ba20432fe6080b8a71d2d6a83fdd3",
+        "disabled_by": null,
+        "entity_category": "config",
+        "entity_id": "number.viomi_v9_2720_countdown_time",
+        "hidden_by": null,
+        "icon": null,
+        "id": "a9619577c2389e2073b811819d9e6d4e",
+        "has_entity_name": false,
+        "name": null,
+        "options": {
+          "conversation": {
+            "should_expose": false
+          }
+        },
+        "original_device_class": null,
+        "original_icon": null,
+        "original_name": "Viomi Smart Heater Pro2 (Bluetooth Version) Countdown Time",
+        "platform": "xiaomi_miot",
+        "supported_features": 0,
+        "translation_key": "countdown.countdown_time",
+        "unique_id": "68:ab:bc:9e:27:20-4eb9172dbf8daf5831366300b1026608-countdown-3.countdown_time-1",
+        "previous_unique_id": null,
+        "unit_of_measurement": "hours"
       }
     ],
     "deleted_entities": [
@@ -6538,6 +7127,150 @@
         "orphaned_timestamp": null,
         "platform": "hassio",
         "unique_id": "db21ed7f_code-server_version_latest"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.relizerel161_homeassistant_discussions",
+        "id": "9cb53d9a6c118bb3c0c2878b1d91c2f8",
+        "orphaned_timestamp": 1702666757.0009103,
+        "platform": "github",
+        "unique_id": "730885476_discussions_count"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.relizerel161_homeassistant_stars",
+        "id": "df231be291b78624d9a9aa94408caa3c",
+        "orphaned_timestamp": 1702666757.0009103,
+        "platform": "github",
+        "unique_id": "730885476_stargazers_count"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.relizerel161_homeassistant_watchers",
+        "id": "f21ab733ce178f09554b2bf7a26a08c8",
+        "orphaned_timestamp": 1702666757.0009103,
+        "platform": "github",
+        "unique_id": "730885476_subscribers_count"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.relizerel161_homeassistant_forks",
+        "id": "6490375dd795ffcab6d9e8b29d45976d",
+        "orphaned_timestamp": 1702666757.0009103,
+        "platform": "github",
+        "unique_id": "730885476_forks_count"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.relizerel161_homeassistant_issues",
+        "id": "ba51a9a8535a52952318a8f3c4eb999b",
+        "orphaned_timestamp": 1702666757.0009103,
+        "platform": "github",
+        "unique_id": "730885476_issues_count"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.relizerel161_homeassistant_pull_requests",
+        "id": "430b34c0a33950faa39e7dbeac78c5f5",
+        "orphaned_timestamp": 1702666757.0009103,
+        "platform": "github",
+        "unique_id": "730885476_pulls_count"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.relizerel161_homeassistant_latest_commit",
+        "id": "370f6feb715b35ac760eb378bd2944a9",
+        "orphaned_timestamp": 1702666757.0009103,
+        "platform": "github",
+        "unique_id": "730885476_latest_commit"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.relizerel161_homeassistant_latest_discussion",
+        "id": "26188ae4c84ea2fb67b4d5f7b0c597b0",
+        "orphaned_timestamp": 1702666757.0009103,
+        "platform": "github",
+        "unique_id": "730885476_latest_discussion"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.relizerel161_homeassistant_latest_release",
+        "id": "28d406c8658633959e41a08fddb7becc",
+        "orphaned_timestamp": 1702666757.0009103,
+        "platform": "github",
+        "unique_id": "730885476_latest_release"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.relizerel161_homeassistant_latest_issue",
+        "id": "08a74ad8742d9500747c83afbda2bf24",
+        "orphaned_timestamp": 1702666757.0009103,
+        "platform": "github",
+        "unique_id": "730885476_latest_issue"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.relizerel161_homeassistant_latest_pull_request",
+        "id": "935013ec6374c5201fa5de4a365ef9d2",
+        "orphaned_timestamp": 1702666757.0009103,
+        "platform": "github",
+        "unique_id": "730885476_latest_pull_request"
+      },
+      {
+        "config_entry_id": null,
+        "entity_id": "sensor.relizerel161_homeassistant_latest_tag",
+        "id": "1b29a9c5dcc5178d715f38055cf2fc5c",
+        "orphaned_timestamp": 1702666757.0009103,
+        "platform": "github",
+        "unique_id": "730885476_latest_tag"
+      },
+      {
+        "config_entry_id": "efd0dcf0551da70093b7b07d0b984d4d",
+        "entity_id": "binary_sensor.git_pull_running",
+        "id": "7814da0fe1eb511aebd6cb79b9dd3552",
+        "orphaned_timestamp": null,
+        "platform": "hassio",
+        "unique_id": "core_git_pull_state"
+      },
+      {
+        "config_entry_id": "efd0dcf0551da70093b7b07d0b984d4d",
+        "entity_id": "sensor.git_pull_version",
+        "id": "580974c8be084878d26e1ec59c9066a8",
+        "orphaned_timestamp": null,
+        "platform": "hassio",
+        "unique_id": "core_git_pull_version"
+      },
+      {
+        "config_entry_id": "efd0dcf0551da70093b7b07d0b984d4d",
+        "entity_id": "sensor.git_pull_newest_version",
+        "id": "7b667159725b854baf2dabb5668edcc3",
+        "orphaned_timestamp": null,
+        "platform": "hassio",
+        "unique_id": "core_git_pull_version_latest"
+      },
+      {
+        "config_entry_id": "efd0dcf0551da70093b7b07d0b984d4d",
+        "entity_id": "sensor.git_pull_cpu_percent",
+        "id": "a37d686ba633abfd19cd020d5882988f",
+        "orphaned_timestamp": null,
+        "platform": "hassio",
+        "unique_id": "core_git_pull_cpu_percent"
+      },
+      {
+        "config_entry_id": "efd0dcf0551da70093b7b07d0b984d4d",
+        "entity_id": "sensor.git_pull_memory_percent",
+        "id": "642877c4ac02dd12eb695a5181f84c4f",
+        "orphaned_timestamp": null,
+        "platform": "hassio",
+        "unique_id": "core_git_pull_memory_percent"
+      },
+      {
+        "config_entry_id": "efd0dcf0551da70093b7b07d0b984d4d",
+        "entity_id": "update.git_pull_update",
+        "id": "2062f24c963d0e2af267c6d9f0ecbbec",
+        "orphaned_timestamp": null,
+        "platform": "hassio",
+        "unique_id": "core_git_pull_version_latest"
       }
     ]
   }

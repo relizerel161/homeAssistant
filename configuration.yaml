@@ -9,3 +9,11 @@ frontend:
 automation: !include automations.yaml
 script: !include scripts.yaml
 scene: !include scenes.yaml
+
+# configuration.yaml
+xiaomi_miot:
+  username: relizerel161@gmail.com
+  password: 1590753Aa
+  server_country: ru # Location of xiaomi cloud: cn(default), de, i2, ru, sg, tw, us
+  http_timeout: 15   # Timeout (seconds) for requesting the xiaomi apis
+  language: ru
